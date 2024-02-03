@@ -22,29 +22,29 @@
                                 
                                 <!-- Designation input -->
                                 <div class="form-outline mb-2">
-                                    <label class="form-label" for="form3Example3">Designation</label>
+                                    <label class="form-label" for="designation">Designation</label>
                                     <select id="designation" class="form-select" aria-label="Default select example">
                                         <option value="1">Director</option>
-                                        <option value="1">Human Resource</option>
+                                        <option value="2">Human Resource</option>
                                         <option value="3">MIS Head</option>
-                                        <option value="1">Operation Manager</option>
-                                        <option value="3">Assistant Manager</option>
-                                        <option value="3">Marketing Manager</option>
-                                        <option value="3">Project Manager</option>
-                                        <option value="3">Assistant Project Manager</option>
-                                        <option value="3">District Manager</option>
-                                        <option value="3">Area Manager</option>
-                                        <option value="3">Legal Officer</option>
-                                        <option value="3">Trainer</option>
-                                        <option value="3">Support Executive(Tele Caller)</option>
-                                        <option value="3">Technical Assist(Tech Support)</option>
-                                        <option value="3">MIS Excutive</option>
-                                        <option value="3">HR Executive</option>
-                                        <option value="3">Aadhar Operator</option>
-                                        <option value="3">Bussiness Correspondent(Banking)</option>
-                                        <option value="3">Accountant Department</option>
-                                        <option value="3">Admin Department</option>
-                                        <option value="3">Receptionist</option>
+                                        <option value="4">Operation Manager</option>
+                                        <option value="5">Assistant Manager</option>
+                                        <option value="6">Marketing Manager</option>
+                                        <option value="7">Project Manager</option>
+                                        <option value="8">Assistant Project Manager</option>
+                                        <option value="9">District Manager</option>
+                                        <option value="10">Area Manager</option>
+                                        <option value="11">Legal Officer</option>
+                                        <option value="12">Trainer</option>
+                                        <option value="12">Support Executive(Tele Caller)</option>
+                                        <option value="14">Technical Assist(Tech Support)</option>
+                                        <option value="15">MIS Excutive</option>
+                                        <option value="16">HR Executive</option>
+                                        <option value="17">Aadhar Operator</option>
+                                        <option value="18">Bussiness Correspondent(Banking)</option>
+                                        <option value="19">Accountant Department</option>
+                                        <option value="20">Admin Department</option>
+                                        <option value="21">Receptionist</option>
                                     </select>
                                 </div>
 
@@ -61,9 +61,7 @@
                                 </div>
                 
                                 <!-- Submit button -->
-                                <button type="submit" class="btn btn-primary w-100 btn-block mb-2">
-                                Sign up
-                                </button>
+                                <button type="submit" class="btn btn-primary w-100 btn-block mb-2" onclick="validateLogin()">Sign In</button>
                             </form>
 
                             <div class="text-center mt-3">
@@ -80,16 +78,21 @@
   <script>
     function validateLogin()
     {
+        var selected = document.getElementById("designation");
+        var designation = selected.options[selected.selectedIndex].text;
+
         var username = document.getElementById('username').value;
         var password = document.getElementById('password').value;
 
-        if (username === 'prithvirajvisave@gmail.com' && password === 'Prithviraj@123')
+        console.log(designation);
+
+        if(designation === 'Marketing Manager' && username === 'prithvirajvisave@gmail.com' && password === 'Prithviraj@123')
         {
-            alert('Successfull');
+            window.location.href = "template\index.html";
         }
         else
         {
-            alert('Invalid username or password. Please try again.');
+            alert('No..!');
         }
     }
 
