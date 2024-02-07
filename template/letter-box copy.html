@@ -7,9 +7,9 @@
     <meta name="description" content="Mofi admin is super flexible, powerful, clean &amp; modern responsive bootstrap 5 admin template with unlimited possibilities."/>
     <meta name="keywords" content="admin template, Mofi admin template, dashboard template, flat admin template, responsive admin template, web app"/>
     <meta name="author" content="pixelstrap"/>
-    <link rel="icon" href="../assets/images/Picture2.png" type="image/x-icon">
-    <link rel="shortcut icon" href="../assets/images/Picture2.png" type="image/x-icon">
-    <title>CES CRM</title>
+    <link rel="icon" href="../assets/images/favicon.png" type="image/x-icon"/>
+    <link rel="shortcut icon" href="../assets/images/favicon.png" type="image/x-icon"/>
+    <title>Mofi - Premium Admin Template</title>
     <!-- Google font-->
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
@@ -39,6 +39,17 @@
     <link rel="stylesheet" type="text/css" href="../assets/css/responsive.css"/>
   </head>
   <body> 
+    <div class="loader-wrapper"> 
+      <div class="loader loader-1">
+        <div class="loader-outter"></div>
+        <div class="loader-inner"></div>
+        <div class="loader-inner-1"></div>
+      </div>
+    </div>
+    <!-- loader ends-->
+    <!-- tap on top starts-->
+    <div class="tap-top"><i data-feather="chevrons-up"></i></div>
+    <!-- tap on tap ends-->
     <!-- page-wrapper Start-->
     <div class="page-wrapper compact-wrapper" id="pageWrapper">
       <div class="page-header row">
@@ -50,14 +61,25 @@
           <nav>
             <ol class="breadcrumb justify-content-sm-start align-items-center mb-0">
               <li class="breadcrumb-item"><a href="index.html"> <i data-feather="home"> </i></a></li>
-              <li class="breadcrumb-item f-w-400">Applications</li>
-              <li class="breadcrumb-item f-w-400 active">Email</li>
+              <li class="breadcrumb-item f-w-400">Email</li>
+              <li class="breadcrumb-item f-w-400 active">Letter Box</li>
             </ol>
           </nav>
         </div>
         <!-- Page Header Start-->
         <div class="header-wrapper col m-0">
           <div class="row">
+            <form class="form-inline search-full col" action="#" method="get">
+              <div class="form-group w-100">
+                <div class="Typeahead Typeahead--twitterUsers">
+                  <div class="u-posRelative">
+                    <input class="demo-input Typeahead-input form-control-plaintext w-100" type="text" placeholder="Search Mofi .." name="q" title="" autofocus="autofocus"/>
+                    <div class="spinner-border Typeahead-spinner" role="status"><span class="sr-only">Loading...</span></div><i class="close-search" data-feather="x"></i>
+                  </div>
+                  <div class="Typeahead-menu"></div>
+                </div>
+              </div>
+            </form>
             <div class="header-logo-wrapper col-auto p-0">
               <div class="logo-wrapper"><a href="index.html"><img class="img-fluid" src="../assets/images/logo/logo.png" alt=""/></a></div>
               <div class="toggle-sidebar">
@@ -920,13 +942,9 @@
         </div>
         <!-- Page Sidebar Ends-->
         <div class="page-body">
-          <div id="authorize-section">
-            <button id="authorize_button" onclick="handleAuthClick()">Authorize</button>
-            <button id="signout_button" onclick="handleSignoutClick()">Sign Out</button>
-        </div>
           <!-- Container-fluid starts-->
           <div class="container-fluid">
-            <div class="email-wrap email-main-wrapper" id="email-main-wrapper">
+            <div class="email-wrap email-main-wrapper">
               <div class="row">
                 <div class="col-xxl-3 col-xl-4 box-col-12">
                   <div class="md-sidebar"> <a class="btn btn-primary md-sidebar-toggle" href="javascript:void(0)">email filter</a>
@@ -985,11 +1003,21 @@
                       <div class="mail-header-wrapper">
                         <div class="mail-header">
                           <div class="form-check form-check-inline m-0">
+                            <input class="form-check-input checkbox-primary" id="emailCheckbox1" type="checkbox" value="option1"/>
                             <label class="form-check-label" for="emailCheckbox1"></label>
                             <ul class="email-tabs nav" id="email-content-tab">
+                              <li class="nav-item"><a class="nav-link" id="pills-important-tab" data-bs-toggle="pill" href="#pills-important" role="tab" aria-controls="pills-important" aria-selected="true">
+                                  <svg class="stroke-icon">
+                                    <use href="../assets/svg/icon-sprite.svg#mail"></use>
+                                  </svg><span>Important </span></a></li>
+                              <li class="nav-item"><a class="nav-link" id="pills-social-tab" data-bs-toggle="pill" href="#pills-social" role="tab" aria-controls="pills-social" aria-selected="false">
+                                  <svg class="stroke-icon">
+                                    <use href="../assets/svg/icon-sprite.svg#goal"></use>
+                                  </svg><span>Social</span></a></li>
                               <li class="nav-item"><a class="nav-link active" id="pills-promotion-tab" data-bs-toggle="pill" href="#pills-promotion" role="tab" aria-controls="pills-promotion" aria-selected="false">
-                                  <span>All</span></a>
-                                </li>
+                                  <svg class="stroke-icon">
+                                    <use href="../assets/svg/icon-sprite.svg#tread"></use>
+                                  </svg><span>Promotion</span></a></li>
                             </ul>
                           </div>
                         </div>
@@ -998,6 +1026,7 @@
                             <input class="form-control" type="text" placeholder="Search..."/><i class="fa fa-search"></i>
                           </div>
                           <div class="light-square"><i class="fa fa-refresh"></i></div>
+                          <div class="light-square"> <i class="fa fa-trash"></i></div>
                           <div class="light-square dropdown-toggle" role="main" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></div>
                           <ul class="dropdown-menu dropdown-block dropdown-menu-end">
                             <li> <a class="dropdown-item" href="#!">All</a></li>
@@ -1075,8 +1104,247 @@
                       <div class="tab-content" id="email-pills-tabContent">
                         <div class="tab-pane fade show active" id="inbox-pill" role="tabpanel" aria-labelledby="inbox-pill-tab">
                           <div class="mail-body-wrapper"> 
-                            <ul id="paginated-list" data-current-page="1" aria-live="polite" onclick="listEmails()">
-                                <!-- Email list appear here..! -->
+                            <ul id="paginated-list" data-current-page="1" aria-live="polite">
+                              <li class="inbox-data">
+                                <div class="inbox-user">
+                                  <div class="form-check form-check-inline m-0">
+                                    <input class="form-check-input checkbox-primary" id="emailCheckbox1" type="checkbox" value="option1"/>
+                                    <label class="form-check-label" for="emailCheckbox1"></label>
+                                  </div>
+                                  <svg class="important-mail active">
+                                    <use href="../assets/svg/icon-sprite.svg#fill-star"></use>
+                                  </svg>
+                                  <div class="rounded-border"><img class="img-fluid" src="../assets/images/user/6.jpg" alt="user"/></div>
+                                  <p>Marvin McKinney</p>
+                                </div>
+                                <div class="inbox-message">
+                                  <div class="email-data"><span>New comments on MSR2023 draft presentation - <span>New Here's a list of all the topic challenges...</span></span>
+                                    <div class="badge badge-light-primary">new</div>
+                                  </div>
+                                  <div class="email-timing"><span>2:30 PM</span></div>
+                                  <div class="email-options"><i class="fa fa-envelope-o envelope-1 show"></i><i class="fa fa-envelope-open-o envelope-2 hide"></i><i class="fa fa-trash-o trash-3"></i><i class="fa fa-print"></i></div>
+                                </div>
+                              </li>
+                              <li class="inbox-data">
+                                <div class="inbox-user">
+                                  <div class="form-check form-check-inline m-0">
+                                    <input class="form-check-input checkbox-primary" id="emailCheckbox1" type="checkbox" value="option1"/>
+                                    <label class="form-check-label" for="emailCheckbox1"></label>
+                                  </div>
+                                  <svg class="important-mail">
+                                    <use href="../assets/svg/icon-sprite.svg#fill-star"></use>
+                                  </svg>
+                                  <div class="rounded-border"><img class="img-fluid" src="../assets/images/user/3.png  " alt="user"/></div>
+                                  <p>Brooklyn Simmons</p>
+                                </div>
+                                <div class="inbox-message">
+                                  <div class="email-data"><span>Confirm your booking id -<span> A collection of textile samples lay spread out on the table - Samsa was a travelling salesman..</span></span>
+                                    <div class="badge badge-light-primary">deadline</div>
+                                  </div>
+                                  <div class="email-timing"><span>7:50 AM</span></div>
+                                  <div class="email-options"><i class="fa fa-envelope-o envelope-1 show"></i><i class="fa fa-envelope-open-o envelope-2 hide"></i><i class="fa fa-trash-o trash-3"></i><i class="fa fa-print"></i></div>
+                                </div>
+                              </li>
+                              <li class="inbox-data">
+                                <div class="inbox-user">
+                                  <div class="form-check form-check-inline m-0">
+                                    <input class="form-check-input checkbox-primary" id="emailCheckbox1" type="checkbox" value="option1"/>
+                                    <label class="form-check-label" for="emailCheckbox1"></label>
+                                  </div>
+                                  <svg class="important-mail">
+                                    <use href="../assets/svg/icon-sprite.svg#fill-star"></use>
+                                  </svg>
+                                  <div class="rounded-border">
+                                    <div>
+                                      <p class="txt-primary">EH</p>
+                                    </div>
+                                  </div>
+                                  <p>Esther Howard</p>
+                                </div>
+                                <div class="inbox-message">
+                                  <div class="email-data"><span>Confirm your booking id -<span>craft beer labore wes anderson cred nesciunt sapiente ea proident...</span></span>
+                                    <div class="badge badge-light-success">work</div>
+                                  </div>
+                                  <div class="email-timing"><span>1:00 PM</span></div>
+                                  <div class="email-options"><i class="fa fa-envelope-o envelope-1 show"></i><i class="fa fa-envelope-open-o envelope-2 hide"></i><i class="fa fa-trash-o trash-3"></i><i class="fa fa-print"></i></div>
+                                </div>
+                              </li>
+                              <li class="inbox-data">
+                                <div class="inbox-user">
+                                  <div class="form-check form-check-inline m-0">
+                                    <input class="form-check-input checkbox-primary" id="emailCheckbox1" type="checkbox" value="option1"/>
+                                    <label class="form-check-label" for="emailCheckbox1"></label>
+                                  </div>
+                                  <svg class="important-mail active">
+                                    <use href="../assets/svg/icon-sprite.svg#fill-star"></use>
+                                  </svg>
+                                  <div class="rounded-border">
+                                    <div class="circle-success">
+                                      <p class="txt-success">CW</p>
+                                    </div>
+                                  </div>
+                                  <p>Cameron Williamson</p>
+                                </div>
+                                <div class="inbox-message">
+                                  <div class="email-data"><span>Very fiction Link  -<span>Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</span></span></div>
+                                  <div class="email-timing"><span>5 Day ago</span></div>
+                                  <div class="email-options"><i class="fa fa-envelope-o envelope-1 show"></i><i class="fa fa-envelope-open-o envelope-2 hide"></i><i class="fa fa-trash-o trash-3"></i><i class="fa fa-print"></i></div>
+                                </div>
+                              </li>
+                              <li class="inbox-data">
+                                <div class="inbox-user">
+                                  <div class="form-check form-check-inline m-0">
+                                    <input class="form-check-input checkbox-primary" id="emailCheckbox1" type="checkbox" value="option1"/>
+                                    <label class="form-check-label" for="emailCheckbox1"></label>
+                                  </div>
+                                  <svg class="important-mail">
+                                    <use href="../assets/svg/icon-sprite.svg#fill-star"></use>
+                                  </svg>
+                                  <div class="rounded-border"><img class="img-fluid" src="../assets/images/user/6.jpg  " alt="user"/></div>
+                                  <p>Ronald Richards</p>
+                                </div>
+                                <div class="inbox-message">
+                                  <div class="email-data"><span>Confirm your booking id -<span>Confirm your booking id - A collection of textile samples lay spread out on the table - Samsa was a travelling salesman..</span></span>
+                                    <div class="badge badge-light-light">Update.Zip</div>
+                                  </div>
+                                  <div class="email-timing"><span>7 April</span></div>
+                                  <div class="email-options"><i class="fa fa-envelope-o envelope-1 show"></i><i class="fa fa-envelope-open-o envelope-2 hide"></i><i class="fa fa-trash-o trash-3"></i><i class="fa fa-print"></i></div>
+                                </div>
+                              </li>
+                              <li class="inbox-data">
+                                <div class="inbox-user">
+                                  <div class="form-check form-check-inline m-0">
+                                    <input class="form-check-input checkbox-primary" id="emailCheckbox1" type="checkbox" value="option1"/>
+                                    <label class="form-check-label" for="emailCheckbox1"></label>
+                                  </div>
+                                  <svg class="important-mail">
+                                    <use href="../assets/svg/icon-sprite.svg#fill-star"></use>
+                                  </svg>
+                                  <div class="rounded-border"><img class="img-fluid" src="../assets/images/user/10.jpg  " alt="user"/></div>
+                                  <p>Darlene Robertson</p>
+                                </div>
+                                <div class="inbox-message">
+                                  <div class="email-data"><span>Promotion Mail  -<span>Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda ...</span></span>
+                                    <div class="badge badge-light-light">Import File..</div>
+                                  </div>
+                                  <div class="email-timing"><span>04 April</span></div>
+                                  <div class="email-options"><i class="fa fa-envelope-o envelope-1 show"></i><i class="fa fa-envelope-open-o envelope-2 hide"></i><i class="fa fa-trash-o trash-3"></i><i class="fa fa-print"></i></div>
+                                </div>
+                              </li>
+                              <li class="inbox-data">
+                                <div class="inbox-user">
+                                  <div class="form-check form-check-inline m-0">
+                                    <input class="form-check-input checkbox-primary" id="emailCheckbox1" type="checkbox" value="option1"/>
+                                    <label class="form-check-label" for="emailCheckbox1"></label>
+                                  </div>
+                                  <svg class="important-mail active">
+                                    <use href="../assets/svg/icon-sprite.svg#fill-star"></use>
+                                  </svg>
+                                  <div class="rounded-border"><img class="img-fluid" src="../assets/images/user/12.png " alt="user"/></div>
+                                  <p>Jacob Jones</p>
+                                </div>
+                                <div class="inbox-message">
+                                  <div class="email-data"><span>Welcome to our new office  -<span>A collection of textile samples lay spread out on the table - Samsa was a travelling salesman..</span></span></div>
+                                  <div class="email-timing"><span>01 April</span></div>
+                                  <div class="email-options"><i class="fa fa-envelope-o envelope-1 show"></i><i class="fa fa-envelope-open-o envelope-2 hide"></i><i class="fa fa-trash-o trash-3"></i><i class="fa fa-print"></i></div>
+                                </div>
+                              </li>
+                              <li class="inbox-data">
+                                <div class="inbox-user">
+                                  <div class="form-check form-check-inline m-0">
+                                    <input class="form-check-input checkbox-primary" id="emailCheckbox1" type="checkbox" value="option1"/>
+                                    <label class="form-check-label" for="emailCheckbox1"></label>
+                                  </div>
+                                  <svg class="important-mail">
+                                    <use href="../assets/svg/icon-sprite.svg#fill-star"></use>
+                                  </svg>
+                                  <div class="rounded-border"><img class="img-fluid" src="../assets/images/user/3.png  " alt="user"/></div>
+                                  <p>Ralph Edwards</p>
+                                </div>
+                                <div class="inbox-message">
+                                  <div class="email-data"><span>Your Order #224820098 has been Confirmed-<span>A collection of textile samples lay spread out on the table...</span></span></div>
+                                  <div class="email-timing"><span>1:00 PM</span></div>
+                                  <div class="email-options"><i class="fa fa-envelope-o envelope-1 show"></i><i class="fa fa-envelope-open-o envelope-2 hide"></i><i class="fa fa-trash-o trash-3"></i><i class="fa fa-print"></i></div>
+                                </div>
+                              </li>
+                              <li class="inbox-data">
+                                <div class="inbox-user">
+                                  <div class="form-check form-check-inline m-0">
+                                    <input class="form-check-input checkbox-primary" id="emailCheckbox1" type="checkbox" value="option1"/>
+                                    <label class="form-check-label" for="emailCheckbox1"></label>
+                                  </div>
+                                  <svg class="important-mail">
+                                    <use href="../assets/svg/icon-sprite.svg#fill-star"></use>
+                                  </svg>
+                                  <div class="rounded-border"><img class="img-fluid" src="../assets/images/user/6.jpg  " alt="user"/></div>
+                                  <p>Ronald Richards</p>
+                                </div>
+                                <div class="inbox-message">
+                                  <div class="email-data"><span>Confirm your booking id -<span>Confirm your booking id - A collection of textile samples lay spread out on the table - Samsa was a travelling salesman..</span></span>
+                                    <div class="badge badge-light-light">Update.Zip</div>
+                                  </div>
+                                  <div class="email-timing"><span>7 April</span></div>
+                                  <div class="email-options"><i class="fa fa-envelope-o envelope-1 show"></i><i class="fa fa-envelope-open-o envelope-2 hide"></i><i class="fa fa-trash-o trash-3"></i><i class="fa fa-print"></i></div>
+                                </div>
+                              </li>
+                              <li class="inbox-data">
+                                <div class="inbox-user">
+                                  <div class="form-check form-check-inline m-0">
+                                    <input class="form-check-input checkbox-primary" id="emailCheckbox1" type="checkbox" value="option1"/>
+                                    <label class="form-check-label" for="emailCheckbox1"></label>
+                                  </div>
+                                  <svg class="important-mail">
+                                    <use href="../assets/svg/icon-sprite.svg#fill-star"></use>
+                                  </svg>
+                                  <div class="rounded-border">
+                                    <div class="circle-success">
+                                      <p class="txt-success">WT</p>
+                                    </div>
+                                  </div>
+                                  <p>William Turner</p>
+                                </div>
+                                <div class="inbox-message">
+                                  <div class="email-data"><span>Very fiction Link  -<span>Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</span></span></div>
+                                  <div class="email-timing"><span>5 Day ago</span></div>
+                                  <div class="email-options"><i class="fa fa-envelope-o envelope-1 show"></i><i class="fa fa-envelope-open-o envelope-2 hide"></i><i class="fa fa-trash-o trash-3"></i><i class="fa fa-print"></i></div>
+                                </div>
+                              </li>
+                              <li class="inbox-data">
+                                <div class="inbox-user">
+                                  <div class="form-check form-check-inline m-0">
+                                    <input class="form-check-input checkbox-primary" id="emailCheckbox1" type="checkbox" value="option1"/>
+                                    <label class="form-check-label" for="emailCheckbox1"></label>
+                                  </div>
+                                  <svg class="important-mail">
+                                    <use href="../assets/svg/icon-sprite.svg#fill-star"></use>
+                                  </svg>
+                                  <div class="rounded-border"><img class="img-fluid" src="../assets/images/user/12.png  " alt="user"/></div>
+                                  <p>Jacob Jones</p>
+                                </div>
+                                <div class="inbox-message">
+                                  <div class="email-data"><span>Welcome to our new office  -<span>A collection of textile samples lay spread out on the table - Samsa was a travelling salesman..</span></span></div>
+                                  <div class="email-timing"><span>01 April</span></div>
+                                  <div class="email-options"><i class="fa fa-envelope-o envelope-1 show"></i><i class="fa fa-envelope-open-o envelope-2 hide"></i><i class="fa fa-trash-o trash-3"></i><i class="fa fa-print"></i></div>
+                                </div>
+                              </li>
+                              <li class="inbox-data">
+                                <div class="inbox-user">
+                                  <div class="form-check form-check-inline m-0">
+                                    <input class="form-check-input checkbox-primary" id="emailCheckbox1" type="checkbox" value="option1"/>
+                                    <label class="form-check-label" for="emailCheckbox1"></label>
+                                  </div>
+                                  <svg class="important-mail">
+                                    <use href="../assets/svg/icon-sprite.svg#fill-star"></use>
+                                  </svg>
+                                  <div class="rounded-border"><img class="img-fluid" src="../assets/images/user/3.png  " alt="user"/></div>
+                                  <p>Ralph Edwards</p>
+                                </div>
+                                <div class="inbox-message">
+                                  <div class="email-data"><span>Your Order #224820098 has been Confirmed-<span>A collection of textile samples lay spread out on the table...</span></span></div>
+                                  <div class="email-timing"><span>1:00 PM</span></div>
+                                  <div class="email-options"><i class="fa fa-envelope-o envelope-1 show"><i class="fa fa-envelope-open-o envelope-2 hide"></i><i class="fa fa-trash-o trash-3"></i><i class="fa fa-print"></i></i></div>
+                                </div>
+                              </li>
                             </ul>
                           </div>
                           <div class="mail-pagination">
@@ -1091,6 +1359,7 @@
                               <li class="inbox-data">
                                 <div class="inbox-user">
                                   <div class="form-check form-check-inline m-0">
+                                    <input class="form-check-input checkbox-primary" id="emailCheckbox1" type="checkbox" value="option1"/>
                                     <label class="form-check-label" for="emailCheckbox1"></label>
                                   </div>
                                   <svg class="important-mail">
@@ -1110,6 +1379,7 @@
                               <li class="inbox-data">
                                 <div class="inbox-user">
                                   <div class="form-check form-check-inline m-0">
+                                    <input class="form-check-input checkbox-primary" id="emailCheckbox1" type="checkbox" value="option1"/>
                                     <label class="form-check-label" for="emailCheckbox1"></label>
                                   </div>
                                   <svg class="important-mail">
@@ -1129,6 +1399,7 @@
                               <li class="inbox-data">
                                 <div class="inbox-user">
                                   <div class="form-check form-check-inline m-0">
+                                    <input class="form-check-input checkbox-primary" id="emailCheckbox1" type="checkbox" value="option1"/>
                                     <label class="form-check-label" for="emailCheckbox1"></label>
                                   </div>
                                   <svg class="important-mail">
@@ -1153,6 +1424,7 @@
                               <li class="inbox-data">
                                 <div class="inbox-user">
                                   <div class="form-check form-check-inline m-0">
+                                    <input class="form-check-input checkbox-primary" id="emailCheckbox1" type="checkbox" value="option1"/>
                                     <label class="form-check-label" for="emailCheckbox1"></label>
                                   </div>
                                   <svg class="important-mail">
@@ -1180,6 +1452,7 @@
                               <li class="inbox-data">
                                 <div class="inbox-user">
                                   <div class="form-check form-check-inline m-0">
+                                    <input class="form-check-input checkbox-primary" id="emailCheckbox1" type="checkbox" value="option1"/>
                                     <label class="form-check-label" for="emailCheckbox1"></label>
                                   </div>
                                   <svg class="important-mail active">
@@ -1199,6 +1472,7 @@
                               <li class="inbox-data">
                                 <div class="inbox-user">
                                   <div class="form-check form-check-inline m-0">
+                                    <input class="form-check-input checkbox-primary" id="emailCheckbox1" type="checkbox" value="option1"/>
                                     <label class="form-check-label" for="emailCheckbox1"></label>
                                   </div>
                                   <svg class="important-mail active">
@@ -1224,6 +1498,7 @@
                               <li class="inbox-data">
                                 <div class="inbox-user">
                                   <div class="form-check form-check-inline m-0">
+                                    <input class="form-check-input checkbox-primary" id="emailCheckbox1" type="checkbox" value="option1"/>
                                     <label class="form-check-label" for="emailCheckbox1"></label>
                                   </div>
                                   <svg class="important-mail">
@@ -1241,6 +1516,7 @@
                               <li class="inbox-data">
                                 <div class="inbox-user">
                                   <div class="form-check form-check-inline m-0">
+                                    <input class="form-check-input checkbox-primary" id="emailCheckbox1" type="checkbox" value="option1"/>
                                     <label class="form-check-label" for="emailCheckbox1"></label>
                                   </div>
                                   <svg class="important-mail">
@@ -1260,6 +1536,7 @@
                               <li class="inbox-data">
                                 <div class="inbox-user">
                                   <div class="form-check form-check-inline m-0">
+                                    <input class="form-check-input checkbox-primary" id="emailCheckbox1" type="checkbox" value="option1"/>
                                     <label class="form-check-label" for="emailCheckbox1"></label>
                                   </div>
                                   <svg class="important-mail">
@@ -1281,6 +1558,7 @@
                               <li class="inbox-data">
                                 <div class="inbox-user">
                                   <div class="form-check form-check-inline m-0">
+                                    <input class="form-check-input checkbox-primary" id="emailCheckbox1" type="checkbox" value="option1"/>
                                     <label class="form-check-label" for="emailCheckbox1"></label>
                                   </div>
                                   <svg class="important-mail">
@@ -1298,6 +1576,7 @@
                               <li class="inbox-data">
                                 <div class="inbox-user">
                                   <div class="form-check form-check-inline m-0">
+                                    <input class="form-check-input checkbox-primary" id="emailCheckbox1" type="checkbox" value="option1"/>
                                     <label class="form-check-label" for="emailCheckbox1"></label>
                                   </div>
                                   <svg class="important-mail">
@@ -1321,6 +1600,7 @@
                               <li class="inbox-data">
                                 <div class="inbox-user">
                                   <div class="form-check form-check-inline m-0">
+                                    <input class="form-check-input checkbox-primary" id="emailCheckbox1" type="checkbox" value="option1"/>
                                     <label class="form-check-label" for="emailCheckbox1"></label>
                                   </div>
                                   <svg class="important-mail">
@@ -1344,6 +1624,7 @@
                               <li class="inbox-data">
                                 <div class="inbox-user">
                                   <div class="form-check form-check-inline m-0">
+                                    <input class="form-check-input checkbox-primary" id="emailCheckbox1" type="checkbox" value="option1"/>
                                     <label class="form-check-label" for="emailCheckbox1"></label>
                                   </div>
                                   <svg class="important-mail">
@@ -1365,6 +1646,7 @@
                               <li class="inbox-data">
                                 <div class="inbox-user">
                                   <div class="form-check form-check-inline m-0">
+                                    <input class="form-check-input checkbox-primary" id="emailCheckbox1" type="checkbox" value="option1"/>
                                     <label class="form-check-label" for="emailCheckbox1"></label>
                                   </div>
                                   <svg class="important-mail">
@@ -1389,6 +1671,7 @@
                               <li class="inbox-data">
                                 <div class="inbox-user">
                                   <div class="form-check form-check-inline m-0">
+                                    <input class="form-check-input checkbox-primary" id="emailCheckbox1" type="checkbox" value="option1"/>
                                     <label class="form-check-label" for="emailCheckbox1"></label>
                                   </div>
                                   <svg class="important-mail">
@@ -1416,6 +1699,7 @@
                               <li class="inbox-data">
                                 <div class="inbox-user">
                                   <div class="form-check form-check-inline m-0">
+                                    <input class="form-check-input checkbox-primary" id="emailCheckbox1" type="checkbox" value="option1"/>
                                     <label class="form-check-label" for="emailCheckbox1"></label>
                                   </div>
                                   <svg class="important-mail">
@@ -1440,6 +1724,7 @@
                               <li class="inbox-data">
                                 <div class="inbox-user">
                                   <div class="form-check form-check-inline m-0">
+                                    <input class="form-check-input checkbox-primary" id="emailCheckbox1" type="checkbox" value="option1"/>
                                     <label class="form-check-label" for="emailCheckbox1"></label>
                                   </div>
                                   <svg class="important-mail">
@@ -1459,6 +1744,7 @@
                               <li class="inbox-data">
                                 <div class="inbox-user">
                                   <div class="form-check form-check-inline m-0">
+                                    <input class="form-check-input checkbox-primary" id="emailCheckbox1" type="checkbox" value="option1"/>
                                     <label class="form-check-label" for="emailCheckbox1"></label>
                                   </div>
                                   <svg class="important-mail">
@@ -1489,6 +1775,7 @@
                               <li class="inbox-data">
                                 <div class="inbox-user">
                                   <div class="form-check form-check-inline m-0">
+                                    <input class="form-check-input checkbox-primary" id="emailCheckbox1" type="checkbox" value="option1"/>
                                     <label class="form-check-label" for="emailCheckbox1"></label>
                                   </div>
                                   <svg class="important-mail">
@@ -1519,6 +1806,7 @@
                               <li class="inbox-data">
                                 <div class="inbox-user">
                                   <div class="form-check form-check-inline m-0">
+                                    <input class="form-check-input checkbox-primary" id="emailCheckbox1" type="checkbox" value="option1"/>
                                     <label class="form-check-label" for="emailCheckbox1"></label>
                                   </div>
                                   <svg class="important-mail">
@@ -1543,6 +1831,7 @@
                               <li class="inbox-data">
                                 <div class="inbox-user">
                                   <div class="form-check form-check-inline m-0">
+                                    <input class="form-check-input checkbox-primary" id="emailCheckbox1" type="checkbox" value="option1"/>
                                     <label class="form-check-label" for="emailCheckbox1"></label>
                                   </div>
                                   <svg class="important-mail">
@@ -1641,16 +1930,21 @@
                             <div> 
                               <div class="rounded-border"> <img class="img-fluid" src="../assets/images/user/12.png" alt="user"/></div>
                               <div class="dropdown-subtitle">
-                                <p id="mail_descr_name"></p>
+                                <p>Ronald Richards</p>
                                 <div class="onhover-dropdown">
                                   <button class="btn p-0 dropdown-button">To me <i data-feather="chevron-down"> </i></button>
-                                  <div class="inbox-security onhover-show-div" id="email-content">
-                                    <!-- Email Content -->
+                                  <div class="inbox-security onhover-show-div">
+                                    <p>From: <span>pixelstrap &lt;pixelstrap3@gmail.com&gt;</span></p>
+                                    <p>to: <span>donut.horry@gmail.com</span></p>
+                                    <p>reply-to:<span>&lt;pixelstrap3@gmail.com&gt;</span></p>
+                                    <p>date: <span>Jun 13, 2023, 7:10 AM</span></p>
+                                    <p>subject: <span>Important Account Security Update</span></p>
+                                    <p>security: <span>standard encryption (TLS)</span></p>
                                   </div>
                                 </div>
                               </div>
                             </div>
-                            <div class="inbox-options"> <!-- <span>Friday 07 Apr (4 hours ago)</span> -->
+                            <div class="inbox-options"> <span>Friday 07 Apr (4 hours ago)</span>
                               <div class="light-square"> 
                                 <svg class="important-mail">
                                   <use href="../assets/svg/icon-sprite.svg#mail-star"></use>
@@ -1739,246 +2033,6 @@
         </footer>
       </div>
     </div>
-
-    <script type="text/javascript">
-      const CLIENT_ID = '81405411603-3mvifv531oc1p77pe372ock52nprd74e.apps.googleusercontent.com';
-      const API_KEY = 'AIzaSyBRjyzU6YLzBht4g90H50dI-KFprY1hwUo';
-      const DISCOVERY_DOC = 'https://www.googleapis.com/discovery/v1/apis/gmail/v1/rest';
-      const SCOPES = 'https://www.googleapis.com/auth/gmail.readonly https://www.googleapis.com/auth/gmail.send';
-
-      let tokenClient;
-      let gapiInited = false;
-
-      document.getElementById('email-main-wrapper').style.display = 'none';
-
-      function gapiLoaded() {
-          gapi.load('client', initializeGapiClient);
-      }
-
-      async function initializeGapiClient() {
-          await gapi.client.init({
-              apiKey: API_KEY,
-              discoveryDocs: [DISCOVERY_DOC],
-          });
-          gapiInited = true;
-          maybeEnableButtons();
-      }
-
-      function gisLoaded() {
-          tokenClient = google.accounts.oauth2.initTokenClient({
-              client_id: CLIENT_ID,
-              scope: SCOPES,
-              callback: '',
-          });
-          maybeEnableButtons();
-      }
-
-      function maybeEnableButtons() {
-          if (gapiInited) {
-              document.getElementById('authorize_button').style.display = 'block';
-          }
-      }
-
-      function handleAuthClick() {
-          tokenClient.callback = async (resp) => {
-              if (resp.error !== undefined) {
-                  throw resp;
-              }
-              document.getElementById('email-main-wrapper').style.display = 'block';
-              listEmails();
-          };
-
-          if (gapi.client.getToken() === null) {
-              tokenClient.requestAccessToken({ prompt: 'consent' });
-          } else {
-              tokenClient.requestAccessToken({ prompt: '' });
-          }
-      }
-
-      function handleSignoutClick() {
-          const token = gapi.client.getToken();
-          if (token !== null) {
-              google.accounts.oauth2.revoke(token.access_token);
-              gapi.client.setToken('');
-              document.getElementById('signout_button').style.display = 'none';
-              document.getElementById('email-section').style.display = 'none';
-              document.getElementById('email-details').style.display = 'none';
-              document.getElementById('compose-section').style.display = 'none';
-              document.getElementById('authorize-section').style.display = 'block';
-          }
-      }
-
-      let nextPageToken = null;
-
-      async function listEmails() {
-          try {
-              const response = await gapi.client.gmail.users.messages.list({
-                  'userId': 'me',
-                  'maxResults': 8,
-                  'pageToken': nextPageToken,
-              });
-
-              const emails = response.result.messages;
-              nextPageToken = response.result.nextPageToken;
-
-              const emailListElement = document.getElementById('paginated-list');
-
-              if (!emails || emails.length === 0) {
-                  emailListElement.innerHTML = '<li>No emails found.</li>';
-                  return;
-              }
-
-              const emailListItems = await Promise.all(
-                  emails.map(async (email) => {
-                      const emailDetails = await gapi.client.gmail.users.messages.get({
-                          'userId': 'me',
-                          'id': email.id,
-                      });
-
-                      const fromHeader = emailDetails.result.payload.headers.find(
-                          (header) => header.name === 'From'
-                      );
-                      const subjectHeader = emailDetails.result.payload.headers.find(
-                          (header) => header.name === 'Subject'
-                      );
-
-                      const senderName = fromHeader ? extractSenderName(fromHeader.value) : 'Unknown Sender';
-                      const subject = subjectHeader ? subjectHeader.value : 'No Subject';
-
-                      // return `<li onclick="showEmailDetails('${email.id}')">${senderName} - ${subject}</li>`;
-                      // return `<li onclick="showEmailDetails('${email.id}')">${senderName} - ${subject}</li>`;
-                      return `<li class="inbox-data">
-                                <div class="inbox-user">
-                                  <div class="form-check form-check-inline m-0">
-                                    <label class="form-check-label" for="emailCheckbox1"></label>
-                                  </div>
-                                  <svg class="important-mail active">
-                                    <use href="../assets/svg/icon-sprite.svg#fill-star"></use>
-                                  </svg>
-                                  <div class="rounded-border"><img class="img-fluid" src="../assets/images/user/6.jpg" alt="user"/></div>
-                                  <p>${senderName}</p>
-                                </div>
-                                <div class="inbox-message">
-                                  <div class="email-data"><span>${subject}</span>
-                                    <div class="badge badge-light-primary">new</div>
-                                  </div>
-                                  <div class="email-timing"><span>2:30 PM</span></div>
-                                  <div class="email-options"><i class="fa fa-envelope-o envelope-1 show"></i><i class="fa fa-envelope-open-o envelope-2 hide"></i><i class="fa fa-trash-o trash-3"></i><i class="fa fa-print"></i></div>
-                                </div>
-                              </li>`;
-                  })
-              );
-
-              emailListElement.innerHTML = emailListItems.join('');
-
-              if (nextPageToken) {
-                  // If there are more pages, show the "Next Page" button
-                  document.getElementById('next_page_button').style.display = 'block';
-              } else {
-                  // Hide the "Next Page" button if there are no more pages
-                  document.getElementById('next_page_button').style.display = 'none';
-              }
-          } catch (err) {
-              console.error('Error fetching emails:', err);
-              document.getElementById('email-list').innerHTML = '<li>Error fetching emails.</li>';
-          }
-      }
-
-      function extractSenderName(fromHeaderValue) {
-          // Extract sender's name from the "From" header value
-          const match = fromHeaderValue.match(/([^<]*)<.*?>/);
-          return match ? match[1].trim() : fromHeaderValue.trim();
-      }
-
-      function nextPage() {
-          // When "Next Page" button is clicked, fetch the next page of emails
-          listEmails();
-      }
-
-      function previousPage() {
-          // Implement fetching previous page of emails
-          // Similar to nextPage but adjusting the pageToken
-          nextPageToken = ''; // Reset the next page token
-          listEmails();
-      }
-
-      async function showEmailDetails(emailId) {
-          try {
-              const response = await gapi.client.gmail.users.messages.get({
-                  'userId': 'me',
-                  'id': emailId,
-              });
-
-              const emailDetails = response.result;
-
-              const headers = emailDetails.payload.headers;
-              const from = headers.find((header) => header.name === 'From').value;
-              const to = headers.find((header) => header.name === 'To').value;
-              const subject = headers.find((header) => header.name === 'Subject').value;
-              const date = headers.find((header) => header.name === 'Date').value;
-              const body = emailDetails.snippet;
-
-              const mail_descr_name = document.getElementById('mail_descr_name');
-              mail_descr_name.innerHTML = from;
-
-              const emailContentElement = document.getElementById('email-content');
-              emailContentElement.innerHTML = `
-                  <p><strong>From:</strong> ${from}</p>
-                  <p><strong>To:</strong> ${to}</p>
-                  <p><strong>Subject:</strong> ${subject}</p>
-                  <p><strong>Date:</strong> ${date}</p>
-              `;
-
-              document.getElementById('email-details').style.display = 'block';
-          } catch (err) {
-              console.error('Error fetching email details:', err);
-              document.getElementById('email-content').innerHTML = '<p>Error fetching email details.</p>';
-          }
-      }
-
-      async function sendEmail() {
-          const to = document.getElementById('to').value;
-          const subject = document.getElementById('subject').value;
-          const body = document.getElementById('body').value;
-
-          if (!to || !subject || !body) {
-              alert('Please fill in all fields (To, Subject, Body) before sending.');
-              return;
-          }
-
-          try {
-              const rawMessage = createMimeMessage(to, subject, body);
-              const response = await gapi.client.gmail.users.messages.send({
-                  'userId': 'me',
-                  'resource': {
-                      'raw': rawMessage,
-                  },
-              });
-
-              console.log('Email sent successfully:', response);
-              alert('Email sent successfully!');
-          } catch (err) {
-              console.error('Error sending email:', err);
-              alert('Error sending email. Please check the console for details.');
-          }
-      }
-
-      function createMimeMessage(to, subject, body) {
-          const headers = [
-              `To: ${to}`,
-              'Content-Type: text/plain; charset="UTF-8"',
-              'MIME-Version: 1.0',
-              `Subject: ${subject}`,
-          ];
-
-          const message = headers.join('\r\n') + '\r\n\r\n' + body;
-
-          return btoa(unescape(encodeURIComponent(message)));
-      }
-  </script>
-
-  <script async defer src="https://apis.google.com/js/api.js" onload="gapiLoaded()"></script>
-  <script async defer src="https://accounts.google.com/gsi/client" onload="gisLoaded()"></script>
     <!-- latest jquery-->
     <script src="../assets/js/jquery.min.js"></script>
     <!-- Bootstrap js-->
