@@ -378,7 +378,6 @@
         <div class="page-body">
           <div id="authorize-section">
             <button id="authorize_button" onclick="handleAuthClick()">Authorize</button>
-            <button id="signout_button" onclick="handleSignoutClick()">Sign Out</button>
         </div>
           <!-- Container-fluid starts-->
           <div class="container-fluid">
@@ -391,7 +390,9 @@
                         <div class="card">
                           <div class="card-body">
                             <div class="email-app-sidebar">
+                              <button class="btn btn-primary emailbox" type="button"><i class="fa fa-signout"></i>Signout</button>
                               <button class="btn btn-primary emailbox" type="button" data-bs-toggle="modal" data-bs-target="#compose_mail"><i class="fa fa-plus"></i>Compose Email</button>
+                              
                               <ul class="nav nav-pills main-menu email-category" id="email-pills-tab" role="tablist">
                                 <li class="nav-item"><a class="nav-link active" id="inbox-pill-tab" data-bs-toggle="pill" href="#inbox-pill" role="tab" aria-controls="inbox-pill" aria-selected="false">
                                     <svg class="stroke-icon">
@@ -437,7 +438,7 @@
                 </div>
                 <div class="col-xxl-9 col-xl-8 box-col-12">
                   <div class="email-right-aside">
-                    <div class="card email-body email-list">
+                    <div class="card email-body email-list" id="email-lists">
                       <div class="mail-header-wrapper">
                         <div class="mail-header">
                           <div class="form-check form-check-inline m-0">
@@ -453,7 +454,7 @@
                           <div class="mail-search d-flex-align-items-center"> 
                             <input class="form-control" type="text" placeholder="Search..."/><i class="fa fa-search"></i>
                           </div>
-                          <div class="light-square"><i class="fa fa-refresh"></i></div>
+                          <div class="light-square" onclick="listEmails()"><i class="fa fa-refresh"></i></div>
                           <div class="light-square dropdown-toggle" role="main" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></div>
                           <ul class="dropdown-menu dropdown-block dropdown-menu-end">
                             <li> <a class="dropdown-item" href="#!">All</a></li>
@@ -531,7 +532,7 @@
                       <div class="tab-content" id="email-pills-tabContent">
                         <div class="tab-pane fade show active" id="inbox-pill" role="tabpanel" aria-labelledby="inbox-pill-tab">
                           <div class="mail-body-wrapper"> 
-                            <ul id="paginated-list" data-current-page="1" aria-live="polite" onclick="listEmails()">
+                            <ul id="paginated-list" data-current-page="1" aria-live="polite">
                                 <!-- Email list appear here..! -->
                             </ul>
                           </div>
@@ -1054,10 +1055,10 @@
                         </div>
                       </div>
                     </div>
-                    <div class="card email-body email-read">
+                    <div class="card email-body email-read" id="email-details">
                       <div class="mail-header-wrapper header-wrapper1">
                         <div class="mail-header1">
-                          <div class="light-square"> 
+                          <div class="light-square" onclick="backtolist()"> 
                             <svg class="btn-email">
                               <use href="../assets/svg/icon-sprite.svg#back-arrow"></use>
                             </svg>
@@ -1091,7 +1092,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="mail-body-wrapper"> 
+                      <div class="mail-body-wrapper" id="descr_mail"> 
                         <div class="user-mail-wrapper">
                           <div class="user-title">
                             <div> 
@@ -1127,10 +1128,7 @@
                           </div>
                           <div class="user-body">
                             <p>Dear Customer,</p>
-                            <p>We regret to notify you that an unauthorized attempt was made to access your account. Our system discovered suspicious activity, and we acted right away to safeguard your personal data.</p>
-                            <p>Please change your login information by clicking the following link in order to safeguard your account:</p>
-                            <p>Please be aware that your account may be temporarily suspended if no action is taken within 24 hours. We urge you to take immediate action to prevent any inconvenience.</p>
-                            <p>We sincerely apologize for any inconvenience this may cause and thank you for your immediate attention to this matter.</p>
+                            <p id="mail-main"></p>
                             <div class="mail-subcontent">
                               <p>Yours faithfully,</p>
                               <p>Account Security Team</p>
@@ -1197,8 +1195,8 @@
     </div>
 
     <script type="text/javascript">
-      const CLIENT_ID = '81405411603-3mvifv531oc1p77pe372ock52nprd74e.apps.googleusercontent.com';
-      const API_KEY = 'AIzaSyBRjyzU6YLzBht4g90H50dI-KFprY1hwUo';
+      const CLIENT_ID = '101563252379-jl2ci6dmotca9ipgjbm9mojpp6a2acb4.apps.googleusercontent.com';
+      const API_KEY = 'AIzaSyCQVlh1E3d_Qbo3dQK3f1A8gNJJsS0wIxY';
       const DISCOVERY_DOC = 'https://www.googleapis.com/discovery/v1/apis/gmail/v1/rest';
       const SCOPES = 'https://www.googleapis.com/auth/gmail.readonly https://www.googleapis.com/auth/gmail.send';
 
@@ -1256,11 +1254,7 @@
           if (token !== null) {
               google.accounts.oauth2.revoke(token.access_token);
               gapi.client.setToken('');
-              document.getElementById('signout_button').style.display = 'none';
-              document.getElementById('email-section').style.display = 'none';
-              document.getElementById('email-details').style.display = 'none';
-              document.getElementById('compose-section').style.display = 'none';
-              document.getElementById('authorize-section').style.display = 'block';
+              document.getElementById('email-main-wrapper').style.display = 'none';
           }
       }
 
@@ -1303,7 +1297,7 @@
 
                       // return `<li onclick="showEmailDetails('${email.id}')">${senderName} - ${subject}</li>`;
                       // return `<li onclick="showEmailDetails('${email.id}')">${senderName} - ${subject}</li>`;
-                      return `<li class="inbox-data">
+                      return `<li class="inbox-data" onclick="showEmailDetails('${email.id}')">
                                 <div class="inbox-user">
                                   <div class="form-check form-check-inline m-0">
                                     <label class="form-check-label" for="emailCheckbox1"></label>
@@ -1340,6 +1334,11 @@
           }
       }
 
+     function backtolist()
+      {
+            document.getElementById('email-details').style.display = 'none'; 
+            document.getElementById('email-lists').style.display = 'block';
+      }
       function extractSenderName(fromHeaderValue) {
           // Extract sender's name from the "From" header value
           const match = fromHeaderValue.match(/([^<]*)<.*?>/);
@@ -1376,6 +1375,7 @@
 
               const mail_descr_name = document.getElementById('mail_descr_name');
               mail_descr_name.innerHTML = from;
+              document.getElementById('mail-main').innerHTML = body;
 
               const emailContentElement = document.getElementById('email-content');
               emailContentElement.innerHTML = `
@@ -1385,6 +1385,7 @@
                   <p><strong>Date:</strong> ${date}</p>
               `;
 
+              document.getElementById('email-lists').style.display = 'none';
               document.getElementById('email-details').style.display = 'block';
           } catch (err) {
               console.error('Error fetching email details:', err);
