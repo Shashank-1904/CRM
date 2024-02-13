@@ -7,7 +7,7 @@
   });
   $(".page-wrapper").attr(
     "class",
-    "page-wrapper " + localStorage.getItem("page-wrapper")
+    "page-wrapper " + "horizontal-wrapper"
   );
   if (localStorage.getItem("page-wrapper") === null) {
     $(".page-wrapper").addClass("horizontal-wrapper");
@@ -16,7 +16,7 @@
   // left sidebar and vertical menu
 if ($("#pageWrapper").hasClass("horizontal-wrapper")) {
     var smallSize = false,
-      bigSize = false;
+    bigSize = false;
     const horizontalMenu = () => {
       var contentwidth = jQuery(window).width();
       if (contentwidth <= 992 && !smallSize) {
