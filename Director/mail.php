@@ -3,11 +3,11 @@ include('includes/header.php');
 include('includes/sidebar.php');
 include('includes/toolbar.php');
 ?>
-<h1 class="page-title" style="text-align:center;">mail</h1>
+<h1 class="page-title" style="text-align:center;">Mail</h1>
 <div class="row">
     
           <div class="col-xl-9">
-            <!-- mail Actual Content -->
+            <!-- Mail Actual Content -->
           </div>
           <div class="col-xl-3">
             <div class="container-dialpad">

@@ -3,11 +3,11 @@ include('includes/header.php');
 include('includes/sidebar.php');
 include('includes/toolbar.php');
 ?>
-<h1 class="page-title" style="text-align:center;">google</h1>
+<h1 class="page-title" style="text-align:center;">Google</h1>
 <div class="row">
     
           <div class="col-xl-9">
-            <!-- google Actual Content -->
+            <!-- Google Actual Content -->
           </div>
           <div class="col-xl-3">
             <div class="container-dialpad">
