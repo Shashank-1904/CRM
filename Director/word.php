@@ -1,7 +1,7 @@
 <?php
-include('../header.php');
-include('../sidebar.php');
-include('../toolbar.php');
+include('includes/header.php');
+include('includes/sidebar.php');
+include('includes/toolbar.php');
 ?>
 <h1 class="page-title" style="text-align:center;">Word</h1>
 <div class="row">
@@ -62,7 +62,7 @@ include('../toolbar.php');
       </div>
 
 <?php
-include('../footer.php');
-include('../script.php');
+include('includes/footer.php');
+include('includes/script.php');
 
 ?>
