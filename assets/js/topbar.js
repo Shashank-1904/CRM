@@ -1,77 +1,68 @@
-// duration of scroll animation
-var scrollDuration = 300;
-// paddles
-var leftPaddle = document.getElementsByClassName('left-paddle');
-var rightPaddle = document.getElementsByClassName('right-paddle');
-// get items dimensions
-var itemsLength = $('.item').length;
-var itemSize = $('.item').outerWidth(true);
-// get some relevant size for the paddle triggering point
-var paddleMargin = 20;
+var lp, rp, mItems, menu, sc, pos;
+lp = $(".left-pointer");
+rp = $(".right-pointer");
+mItems = $(".menu-item");
+// var tItemsWidth = 0;
+// mItems.find("a").each(function(){
+//   tItemsWidth += $(this).outerWidth(true);
+// });
+// $(".menu-item a").click(function(){
+//   $(".menu-item a").removeclass('active');
+//   $(this).addclass('active');
+// });
 
-// get wrapper width
-var getMenuWrapperSize = function() {
-	return $('.menu-wrapper').outerWidth();
-}
-var menuWrapperSize = getMenuWrapperSize();
-// the wrapper is responsive
-$(window).on('resize', function() {
-	menuWrapperSize = getMenuWrapperSize();
+lp.click(function(){
+	sc = mItems.width() - 60;
+  pos = mItems.scrollLeft() - sc;
+  mItems.animate({'scrollLeft': pos}, 'slow');
 });
-// size of the visible part of the menu is equal as the wrapper size 
-var menuVisibleSize = menuWrapperSize;
-
-// get total width of all menu items
-var getMenuSize = function() {
-	return itemsLength * itemSize;
-};
-var menuSize = getMenuSize();
-// get how much of menu is invisible
-var menuInvisibleSize = menuSize - menuWrapperSize;
-
-// get how much have we scrolled to the left
-var getMenuPosition = function() {
-	return $('.menu').scrollLeft();
-};
-
-// finally, what happens when we are actually scrolling the menu
-$('.menu').on('scroll', function() {
-
-	// get how much of menu is invisible
-	menuInvisibleSize = menuSize - menuWrapperSize;
-	// get how much have we scrolled so far
-	var menuPosition = getMenuPosition();
-
-	var menuEndOffset = menuInvisibleSize - paddleMargin;
-
-	// show & hide the paddles 
-	// depending on scroll position
-	if (menuPosition <= paddleMargin) {
-		$(leftPaddle).addClass('hidden');
-		$(rightPaddle).removeClass('hidden');
-	} else if (menuPosition < menuEndOffset) {
-		// show both paddles in the middle
-		$(leftPaddle).removeClass('hidden');
-		$(rightPaddle).removeClass('hidden');
-	} else if (menuPosition >= menuEndOffset) {
-		$(leftPaddle).removeClass('hidden');
-		$(rightPaddle).addClass('hidden');
-}
-
-	// print important values
-	$('#print-wrapper-size span').text(menuWrapperSize);
-	$('#print-menu-size span').text(menuSize);
-	$('#print-menu-invisible-size span').text(menuInvisibleSize);
-	$('#print-menu-position span').text(menuPosition);
-
+rp.click(function(){
+  sc = mItems.width() - 60;
+  pos = mItems.scrollLeft() + sc;
+  mItems.animate({'scrollLeft': pos}, 'slow');
+});
+var scrollLeftPrev = 0; 
+mItems.scroll(function(){
+  var newScrollLeft = mItems.scrollLeft(),width=mItems.width(),
+            scrollWidth=mItems.get(0).scrollWidth;
+  var offset=8;
+  console.log(scrollWidth - newScrollLeft - width);
+  if (scrollWidth - newScrollLeft - width < offset) {
+            console.log('right end');
+    $(".right-pointer").addClass("dis");
+  }else{
+    $(".right-pointer").removeClass("dis");
+  }
+  if( $(this).scrollLeft() == 0){
+    $(".left-pointer").addClass("dis");
+  }else{
+    $(".left-pointer").removeClass("dis");
+  }
+  scrollLeftPrev = newScrollLeft;
 });
 
-// scroll to left
-$(rightPaddle).on('click', function() {
-	$('.menu').animate( { scrollLeft: menuInvisibleSize}, scrollDuration);
+const slider1 = document.querySelector('.menu-item');
+let isDown = false;
+let startX;
+let scrollLeft;
+slider1.addEventListener('mousedown', (e) => {
+  isDown = true;
+  slider1.classList.add('active');
+  startX = e.pageX - slider1.offsetLeft;
+  scrollLeft = slider1.scrollLeft;
 });
-
-// scroll to right
-$(leftPaddle).on('click', function() {
-	$('.menu').animate( { scrollLeft: '0' }, scrollDuration);
+slider1.addEventListener('mouseleave', () => {
+  isDown = false;
+  slider1.classList.remove('active');
+});
+slider1.addEventListener('mouseup', () => {
+  isDown = false;
+  slider1.classList.remove('active');
+});
+slider1.addEventListener('mousemove', (e) => {
+  if(!isDown) return;
+  e.preventDefault();
+  const x = e.pageX - slider1.offsetLeft;
+  const walk = (x - startX) * 1; //scroll-fast
+  slider1.scrollLeft = scrollLeft - walk;
 });
