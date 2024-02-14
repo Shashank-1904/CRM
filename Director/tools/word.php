@@ -7,6 +7,7 @@ include('includes/toolbar.php');
 <div class="row">
     
           <div class="col-xl-9">
+            <!-- Word Actual Content -->
           </div>
           <div class="col-xl-3">
             <div class="container-dialpad">
