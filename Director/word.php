@@ -3,9 +3,9 @@ include('includes/header.php');
 include('includes/sidebar.php');
 include('includes/toolbar.php');
 ?>
-
-<div class="row mt-5">
-    <h1>Word</h1>
+<h1 class="page-title" style="text-align:center;">Word</h1>
+<div class="row">
+    
           <div class="col-xl-9">
           </div>
           <div class="col-xl-3">
