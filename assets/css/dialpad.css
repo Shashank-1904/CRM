@@ -29,6 +29,7 @@
     height: 420px;
     text-align: center;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    border-radius: 15px;
   }
   
   #output {
@@ -36,20 +37,20 @@
     font-size: 2rem;
     height: 60px;
     font-weight: bold;
-    color: #1976d2;
+    color: #2a3650;
   }
   
-  #call {
+  .call {
     display: inline-block;
     background-color: #66bb6a;
     padding: 4px 30px;
-    margin: 10px;
+    margin: 20px 30px;
     color: white;
     border-radius: 4px;
     float: left;
     cursor: pointer;
   }
-  
+
   .botrow {
     margin: 0 auto;
     width: 280px;
