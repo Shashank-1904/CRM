@@ -891,7 +891,7 @@
 
     .page-body {
       min-height: calc(100vh - #{$header-size});
-      margin-top: $header-size;
+      // margin-top: $header-size;
       padding: $page-body-padding;
       position: relative;
       transition: 0.5s;
@@ -1305,7 +1305,7 @@
 
                           a {
                             background: transparent;
-                            padding: 0 30px;
+                            padding: 4px 30px;
                             display: block;
                             transition: all 0.5s ease;
                             line-height: 1.9;
