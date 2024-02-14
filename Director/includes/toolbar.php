@@ -8,7 +8,7 @@
             <a href="#">Aadhaar Portal</a>
             <a href="#">Notepad</a>
             <a href="#">Excel</a>
-            <a href="pages/word.php">Word</a>
+            <a href="word.php">Word</a>
             <a href="#">File Manager</a>
             <a href="#">Paint</a>
             <a href="#">Stick Notes</a>
