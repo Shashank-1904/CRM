@@ -10,7 +10,7 @@
   .digit,
   .dig {
     float: left;
-    padding: 10px 30px;
+    padding: 4px 37px;
     width: 30px;
     font-size: 2rem;
     cursor: pointer;
@@ -23,9 +23,9 @@
   
   .container-dialpad {
     background-color: white;
-    width: 320px;
-    padding: 20px;
-    margin: 30px auto;
+    width: 290px;
+    padding-left: 20px;
+    margin: auto;
     height: 420px;
     text-align: center;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
