@@ -1,7 +1,7 @@
 <?php
-include('includes/header.php');
-include('includes/sidebar.php');
-include('includes/toolbar.php');
+include('header.php');
+include('sidebar.php');
+include('toolbar.php');
 ?>
 
       <div class="row mt-5">
@@ -129,7 +129,7 @@ include('includes/toolbar.php');
           </div>
       </div>
 <?php
-include('includes/footer.php');
-include('includes/script.php');
+include('footer.php');
+include('script.php');
 
 ?>
