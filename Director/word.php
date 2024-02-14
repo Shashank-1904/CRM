@@ -5,6 +5,9 @@ include('includes/toolbar.php');
 ?>
 
 <div class="row mt-5">
+    <div class="col-4 col-xl-4 page-title">
+        <h4 class="f-w-700 mt-2">Word</h4>
+      </div>
           <div class="col-xl-9">
           </div>
           <div class="col-xl-3">
