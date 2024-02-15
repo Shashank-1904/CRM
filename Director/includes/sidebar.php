@@ -72,12 +72,14 @@
               <!-------------------------------------Bar_List----------------------------------------------------------->
               <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title"
                   href="javascript:void(0)">
-                  <svg class="stroke-icon">
+                  <!-- <svg class="stroke-icon">
                     <use href="../assets/svg/icon-sprite.svg#stroke-userplus"></use>
                   </svg>
                   <svg class="fill-icon">
                     <use href="../assets/svg/icon-sprite.svg#fill-userplus"></use>
-                  </svg><span class="lan-30">Operator</span></a>
+                  </svg> -->
+                  <svg class="icon-anchor"><use xlink:href="../assets/svg/icons.svg#icon-anchor"></use></svg>
+                  <span class="lan-30">Operator</span></a>
                 <ul class="sidebar-submenu">
                   <li><a href="operator_profile.php">Operator Profile</a></li>
                   <li><a href="operator_status_alert.php">Status Alert</a></li>
