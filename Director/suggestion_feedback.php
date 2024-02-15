@@ -9,7 +9,7 @@ include('includes/toolbar.php');
           <div class="col-xl-9">
                 <div class="card height-equal">
                   <div class="card-header">
-                    <h4>Student validation form</h4>
+                    <h4>Suggestion and Feedback form</h4>
                     <p class="f-m-light mt-1">
                         Please make sure fill all the filed before click on next button.</p>
                   </div>
