@@ -91,8 +91,6 @@ include('includes/toolbar.php');
               <div class="botrow">
                 <div class="call"><i class="fa fa-phone" aria-hidden="true"></i></div>
                 <div style="background-color: red;" class="call"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></div>
-
-                
               </div>
             </div>
           </div>
