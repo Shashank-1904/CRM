@@ -393,5 +393,6 @@
 })(jQuery);
 
 
+new DataTable('#example');
 
 
