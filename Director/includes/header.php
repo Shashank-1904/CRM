@@ -28,6 +28,8 @@
   <link rel="stylesheet" type="text/css" href="../assets/css/vendors/flag-icon.css">
   <!-- Feather icon-->
   <link rel="stylesheet" type="text/css" href="../assets/css/vendors/feather-icon.css">
+  <!------------------------>
+  <link rel="stylesheet" type="text/css" href="../assets/css/vendors/icones.css">
   <!-- Plugins css start-->
   <link rel="stylesheet" type="text/css" href="../assets/css/vendors/slick.css">
   <link rel="stylesheet" type="text/css" href="../assets/css/vendors/slick-theme.css">
