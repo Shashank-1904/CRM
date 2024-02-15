@@ -34,7 +34,7 @@
                   </svg>
                   <svg class="fill-icon">
                     <use href="../assets/svg/icon-sprite.svg#fill-home"> </use>
-                  </svg><span>Dashboard</span></a>
+                  </svg><span><li><a href="index.php">Dashboard</a></li></span></a>
               </li>
               <!-----------------------------------Title------------------------------------------------------------->
               <li class="sidebar-main-title">
