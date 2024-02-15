@@ -28,13 +28,13 @@
                 </div>
               </li>
               <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title link-nav"
-                  href="#">
+                  href="index.php">
                   <svg class="stroke-icon">
                     <use href="../assets/svg/icon-sprite.svg#stroke-home"></use>
                   </svg>
                   <svg class="fill-icon">
                     <use href="../assets/svg/icon-sprite.svg#fill-home"> </use>
-                  </svg><span><li><a href="index.php">Dashboard</a></li></span></a>
+                  </svg><span>Dashboard</span></a>
               </li>
               <!-----------------------------------Title------------------------------------------------------------->
               <li class="sidebar-main-title">
