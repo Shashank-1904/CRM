@@ -93,16 +93,15 @@
               <li class="profile-nav onhover-dropdown px-0 py-0">
                 <div class="d-flex profile-media align-items-center"><img class="img-30"
                     src="../assets/images/dashboard/profile.png" alt="">
-                  <div class="flex-grow-1"><span>Alen Miller</span>
-                    <p class="mb-0 font-outfit">UI Designer<i class="fa fa-angle-down"></i></p>
+                  <div class="flex-grow-1"><span>Sunil Pawar</span>
+                    <p class="mb-0 font-outfit">Director<i class="fa fa-angle-down"></i></p>
                   </div>
                 </div>
                 <ul class="profile-dropdown onhover-show-div">
                   <li><a href="private-chat.html"><i data-feather="user"></i><span>Account</span></a></li>
-                  <li><a href="letter-box.html"><i data-feather="mail"></i><span>Inbox</span></a></li>
                   <li><a href="task.html"><i data-feather="file-text"></i><span>Taskboard</span></a></li>
                   <li><a href="edit-profile.html"><i data-feather="settings"></i><span>Settings</span></a></li>
-                  <li><a href="login.html"><i data-feather="log-in"> </i><span>Log in</span></a></li>
+                  <li><a href="login.html"><i data-feather="log-in"> </i><span>Log Out</span></a></li>
                 </ul>
               </li>
             </ul>
