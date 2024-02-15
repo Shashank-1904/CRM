@@ -8,9 +8,10 @@ include('includes/toolbar.php');
     
           <div class="col-xl-9">
             <!-- Word Actual Content -->
-            <div id="div_editor1">
-	<p>This is a default toolbar demo of Rich text editor.</p>
-	<p><img src='/images/editor-image.png' /></p>
+            <div id="editor">
+  <p>Hello World!</p>
+  <p>Some initial <strong>bold</strong> text</p>
+  <p><br /></p>
 </div>
           </div>
           <div class="col-xl-3">
@@ -64,7 +65,11 @@ include('includes/toolbar.php');
             </div>
           </div>
       </div>
-
+      <script>
+  const quill = new Quill('#editor', {
+    theme: 'snow'
+  });
+</script>
 <?php
 include('includes/footer.php');
 include('includes/script.php');

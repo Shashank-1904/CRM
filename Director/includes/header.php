@@ -37,7 +37,7 @@
   <link rel="stylesheet" type="text/css" href="../assets/css/vendors/owlcarousel.css">
   <link rel="stylesheet" type="text/css" href="../assets/css/vendors/rating.css">
   <link rel="stylesheet" type="text/css" href="../assets/css/vendors/vector-map.css">
-  <link rel="stylesheet" href="/richtexteditor/rte_theme_default.css" />
+  <link href="https://cdn.jsdelivr.net/npm/quill@2.0.0-rc.2/dist/quill.snow.css" rel="stylesheet" />
   <!-- Plugins css Ends-->
   <!-- Bootstrap css-->
   <link rel="stylesheet" type="text/css" href="../assets/css/vendors/bootstrap.css">
