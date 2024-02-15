@@ -50,7 +50,7 @@
                     <use href="../assets/svg/icon-sprite.svg#stroke-user"></use>
                   </svg>
                   <svg class="fill-icon">
-                    <use href="../assets/svg/icon-sprite.svg#fill-user"></use>
+                    <use href="../assets/svg/user.svg"></use>
                   </svg><span class="lan-30">Employee</span></a>
                 <ul class="sidebar-submenu">
                   <li><a href="employee_profile.php">Profile </a></li>
@@ -103,7 +103,7 @@
                     <use href="../assets/svg/icon-sprite.svg#fill-home"></use>
                   </svg><span class="lan-30">Calling</span></a>
                 <ul class="sidebar-submenu">
-                  <li><a href="calling_dashboard.php">Dashboard</a></li>
+                  <li><a href="calling_ dashboard.php">Dashboard</a></li>
                   <li><a href="calling_history.php">History</a></li>
                 </ul>
               </li>
