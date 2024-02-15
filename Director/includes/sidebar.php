@@ -51,7 +51,7 @@
                   </svg>
                   <svg class="fill-icon">
                     <use href="../assets/svg/icon-sprite.svg#fill-user"></use> -->
-                    <svg class="icon-anchor"><use xlink:href="../assets/svg/icons.svg#icon-anchor"></use></svg>
+                    <svg class="icon-bed-pulse"><use xlink:href="../assets/svg/icons.svg#icon-bed-pulse"></use></svg>
                   </svg><span class="lan-30">Employee</span></a>
                 <ul class="sidebar-submenu">
                   <li><a href="employee_profile.php">Profile </a></li>
