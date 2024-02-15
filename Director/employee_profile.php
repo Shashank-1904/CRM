@@ -30,10 +30,10 @@ include('includes/toolbar.php');
             <tbody>
                 <tr>
                     <td>1</td>
-                    <td>2</td>
-                    <td>2</td> 
-                    <td>2334</td> 
-                    <td>243</td>
+                    <td>ABC</td>
+                    <td>HR</td> 
+                    <td>40000</td> 
+                    <td>12/5/2000</td>
                     <td>
                         <form class="text-center" action="../handler/DownloadAdmissionForm.php" method="POST">
                             <button type="submit" name="down_btn" class="btn btn-success">Download</button>
