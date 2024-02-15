@@ -1890,8 +1890,17 @@
                     vertical-align: -2px;
                     float: none;
                     transition: all 0.3s ease;
+                    fill: #ffff;
+            
                   }
-
+                  
+                  }
+                  &:hover {
+                    svg{
+                      fill:#ffff
+                    }
+                    }
+    
                   span {
                     letter-spacing: 0.7px;
                     text-transform: capitalize;
