@@ -12,9 +12,6 @@ include('includes/toolbar.php');
             <div class="row">
               <div class="col-sm-12">
                 <div class="card">
-                  <div class="card-header card-no-border pb-0">
-                    <h4>Word</h4>
-                  </div>
                   <div class="card-body">
                     <textarea id="editor1" name="editor1" cols="30" rows="10">
 
