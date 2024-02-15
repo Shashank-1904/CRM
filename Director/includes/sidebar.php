@@ -13,7 +13,7 @@
           </div>
         </div>
         <div class="logo-icon-wrapper"><a href="index.html"><img class="img-fluid"
-              src="../assets/images/logo/main-logo.png" alt=""></a></div>
+              src="../assets/images/logo/main-logo.png" style="width:100px" alt=""></a></div>
         <nav class="sidebar-main">
           <div class="left-arrow" id="left-arrow"><i data-feather="arrow-left"></i></div>
           <div id="sidebar-menu">
