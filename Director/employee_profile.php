@@ -20,16 +20,16 @@ include('includes/toolbar.php');
                 <tr>
                     <th>Sr. No</th>
                     <th>Name</th>
-                    <th>Admit Room</th>
-                    <th>Admit Result</th>
-                    <th>Admit Date</th>
-                    <th>Download Form</th>
-                    <th>Monitor</th>
+                    <th>Department</th>
+                    <th>Salary</th>
+                    <th>Join Date</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
                 </tr>    
             </thead>
             <tbody>
                 <tr>
-                    <td>3333</td>
+                    <td>1</td>
                     <td>2</td>
                     <td>2</td> 
                     <td>2334</td> 
