@@ -17,8 +17,7 @@
   <script src="../assets/js/slick/slick.min.js"></script>
   <script src="../assets/js/slick/slick.js"></script>
   <script src="../assets/js/header-slick.js"></script>
-  <script defer src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
-<script defer src="https://cdn.datatables.net/1.13.7/js/dataTables.bootstrap5.min.js"></script>
+
   <script src="../assets/js/chart/morris-chart/raphael.js"></script>
   <script src="../assets/js/chart/morris-chart/morris.js"> </script>
   <script src="../assets/js/chart/morris-chart/prettify.min.js"></script>
@@ -40,9 +39,9 @@
   <script src="../assets/js/vector-map/map/jquery-jvectormap-in-mill.js"></script>
   <script src="../assets/js/vector-map/map/jquery-jvectormap-asia-mill.js"></script>
   <!-- calendar js-->
-  <script src="../assets/js/datatable/datatables/jquery.dataTables.min.js"></script>
+  <!-- <script src="../assets/js/datatable/datatables/jquery.dataTables.min.js"></script>
   <script src="../assets/js/datatable/datatables/datatable.custom.js"></script>
-  <script src="../assets/js/datatable/datatables/datatable.custom1.js"></script>
+  <script src="../assets/js/datatable/datatables/datatable.custom1.js"></script> -->
   <script src="../assets/js/datepicker/date-picker/datepicker.js"></script>
   <script src="../assets/js/datepicker/date-picker/datepicker.en.js"></script>
   <script src="../assets/js/datepicker/date-picker/datepicker.custom.js"></script>
@@ -53,6 +52,8 @@
   <script src="../assets/js/countdown.js"></script>
   <script src="../assets/js/dashboard/dashboard_3.js"></script>
   <script src="../assets/js/ecommerce.js"></script>
+  <script defer src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
+<script defer src="https://cdn.datatables.net/1.13.7/js/dataTables.bootstrap5.min.js"></script>
   <!-- Plugins JS Ends-->
   <!-- Theme js-->
   <script src="../assets/js/script.js"></script>

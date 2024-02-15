@@ -32,7 +32,6 @@
   <link rel="stylesheet" type="text/css" href="../assets/css/vendors/slick-theme.css">
   <link rel="stylesheet" type="text/css" href="../assets/css/vendors/scrollbar.css">
   <link rel="stylesheet" type="text/css" href="../assets/css/vendors/animate.css">
-  <link rel="stylesheet" type="text/css" href="../assets/css/vendors/datatables.css">
   <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/dataTables.bootstrap5.min.css">
   <link rel="stylesheet" type="text/css" href="../assets/css/vendors/date-picker.css">
   <link rel="stylesheet" type="text/css" href="../assets/css/vendors/owlcarousel.css">
