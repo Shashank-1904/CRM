@@ -249,9 +249,8 @@
                     <use href="../assets/svg/icon-sprite.svg#fill-home"></use>
                   </svg><span class="lan-30">Suggestion</span></a>
                 <ul class="sidebar-submenu">
-                  <li><a href="#">CRM Bug Complaint</a></li>
-                  <li><a href="#">Suggestion</a></li>
-                  <li><a href="#">Feedback</a></li>
+                  <li><a href="bug_complaint.php">CRM Bug Complaint</a></li>
+                  <li><a href="suggestion_feedback.php">Suggestion & Feedback</a></li>
                 </ul>
               </li>
               <!---------------------------------------Bar_List-End--------------------------------------------------------->
