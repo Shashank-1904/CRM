@@ -38,6 +38,8 @@
   <script src="../assets/js/vector-map/map/jquery-jvectormap-chicago-mill-en.js"></script>
   <script src="../assets/js/vector-map/map/jquery-jvectormap-in-mill.js"></script>
   <script src="../assets/js/vector-map/map/jquery-jvectormap-asia-mill.js"></script>
+  <script type="text/javascript" src="/richtexteditor/rte.js"></script>
+  <script type="text/javascript" src='/richtexteditor/plugins/all_plugins.js'></script>
   <!-- calendar js-->
   <!-- <script src="../assets/js/datatable/datatables/jquery.dataTables.min.js"></script>
   <script src="../assets/js/datatable/datatables/datatable.custom.js"></script>
