@@ -17,6 +17,8 @@
   <script src="../assets/js/slick/slick.min.js"></script>
   <script src="../assets/js/slick/slick.js"></script>
   <script src="../assets/js/header-slick.js"></script>
+  <script defer src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
+<script defer src="https://cdn.datatables.net/1.13.7/js/dataTables.bootstrap5.min.js"></script>
   <script src="../assets/js/chart/morris-chart/raphael.js"></script>
   <script src="../assets/js/chart/morris-chart/morris.js"> </script>
   <script src="../assets/js/chart/morris-chart/prettify.min.js"></script>
