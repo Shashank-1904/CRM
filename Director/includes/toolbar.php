@@ -9,6 +9,7 @@
             <a href="notepad.php">Notepad</a>
             <a href="excel.php">Excel</a>
             <a href="word.php">Word</a>
+            <a href="meet.php">Meet</a>
             <a href="fileManager.php">File Manager</a>
             <a href="paint.php">Paint</a>
             <a href="stickyNotes.php">Stick Notes</a>
