@@ -40,6 +40,7 @@
   <!-- Plugins css Ends-->
   <!-- Bootstrap css-->
   <link rel="stylesheet" type="text/css" href="../assets/css/vendors/bootstrap.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css">
   <!-- App css-->
   <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
   <link id="color" rel="stylesheet" href="../assets/css/color-1.css" media="screen">
