@@ -12,7 +12,7 @@
             </svg>
           </div>
         </div>
-        <div class="logo-icon-wrapper"><a href="index.html"><img class="img-fluid" src="../assets/images/logo/logo_Short.png" alt=""></a></div>
+        <div class="logo-icon-wrapper"><a href="index.html"><img class="img-fluid" style="width:100px;" src="../assets/images/logo/logo_Short.png" alt=""></a></div>
         <nav class="sidebar-main">
           <div class="left-arrow" id="left-arrow"><i data-feather="arrow-left"></i></div>
           <div id="sidebar-menu">
