@@ -24,55 +24,24 @@ include('includes/toolbar.php');
                         <input class="form-control" id="exampleFormControlInput1" type="email" placeholder="pesamof475@saeoil.com" required>
                       </div>
                       <div class="col-12"> 
-                        <label class="col-sm-12 col-form-label" for="inputPassword2">Password</label>
+                        <label class="col-sm-12 col-form-label" for="inputPassword2">Subject</label>
                         <input class="form-control" id="inputPassword2" type="password" required>
                       </div>
                       <div class="col-12"> 
-                        <label class="form-label" for="validationDefault04">State</label>
+                        <label class="form-label" for="validationDefault04">Type</label>
                         <select class="form-select" id="validationDefault04" required="">
                           <option selected="" disabled="" value="">Choose...</option>
-                          <option>U.K </option>
-                          <option>Thailand</option>
-                          <option>India </option>
-                          <option>U.S</option>
+                          <option>Suggestion</option>
+                          <option>Feedback</option>
                         </select>
                       </div>
                       <div class="col-12"> 
                         <label class="form-label" for="formFile">Choose file</label>
-                        <input class="form-control" id="formFile" type="file" required>
-                      </div>
-                      <div class="col-12"> 
-                        <div class="card-wrapper border rounded-3 checkbox-checked">
-                          <h6 class="sub-title">Select your payment method</h6>
-                          <div class="radio-form">
-                            <div class="form-check">
-                              <input class="form-check-input" id="flexRadioDefault1" type="radio" name="flexRadioDefault" required="">
-                              <label class="form-check-label" for="flexRadioDefault1">Visa</label>
-                            </div>
-                            <div class="form-check">
-                              <input class="form-check-input" id="flexRadioDefault2" type="radio" name="flexRadioDefault" checked="" required="">
-                              <label class="form-check-label" for="flexRadioDefault2">MasterCard</label>
-                            </div>
-                            <div class="form-check">
-                              <input class="form-check-input" id="flexRadioDefault3" type="radio" name="flexRadioDefault" checked="" required="">
-                              <label class="form-check-label" for="flexRadioDefault3">Paypal</label>
-                            </div>
-                          </div>
-                        </div>
+                        <input class="form-control" id="formFile" type="file">
                       </div>
                       <div class="col-12"> 
                         <label class="form-label" for="exampleFormControlTextarea1">Description</label>
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                      </div>
-                      <div class="col-12 checkbox-checked">
-                        <input class="form-check-input" id="flexCheckDefault" type="checkbox" value="">
-                        <label class="form-check-label" for="flexCheckDefault">I agree to the policies</label>
-                      </div>
-                      <div class="col-12"> 
-                        <div class="form-check form-switch">
-                          <input class="form-check-input" id="flexSwitchCheckDefault" type="checkbox" role="switch" required>
-                          <label class="form-check-label" for="flexSwitchCheckDefault">Are you sure above information are true</label>
-                        </div>
                       </div>
                       <div class="col-12">
                         <button class="btn btn-primary" type="submit">Submit</button>
