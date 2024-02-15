@@ -3,7 +3,7 @@ include('includes/header.php');
 include('includes/sidebar.php');
 include('includes/toolbar.php');
 ?>
-<h1 class="page-title" style="text-align:center;">Suggestion & Feedback</h1>
+<h1 class="page-title" style="text-align:center;">CRM Bug Complaint</h1>
 <div class="row">
     
           <div class="col-xl-9">
