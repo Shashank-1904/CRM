@@ -47,10 +47,10 @@
               <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title"
                   href="javascript:void(0)">
                   <svg class="stroke-icon">
-                    <use href="../assets/svg/icon-sprite.svg#stroke-home"></use>
+                    <use href="../assets/svg/icon-sprite.svg#stroke-user"></use>
                   </svg>
                   <svg class="fill-icon">
-                    <use href="../assets/svg/icon-sprite.svg#fill-home"></use>
+                    <use href="../assets/svg/icon-sprite.svg#fill-user"></use>
                   </svg><span class="lan-30">Employee</span></a>
                 <ul class="sidebar-submenu">
                   <li><a href="employee_profile.php">Profile </a></li>
@@ -73,10 +73,10 @@
               <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title"
                   href="javascript:void(0)">
                   <svg class="stroke-icon">
-                    <use href="../assets/svg/icon-sprite.svg#stroke-home"></use>
+                    <use href="../assets/svg/icon-sprite.svg#stroke-userplus"></use>
                   </svg>
                   <svg class="fill-icon">
-                    <use href="../assets/svg/icon-sprite.svg#fill-home"></use>
+                    <use href="../assets/svg/icon-sprite.svg#fill-userplus"></use>
                   </svg><span class="lan-30">Operator</span></a>
                 <ul class="sidebar-submenu">
                   <li><a href="operator_profile.php">Operator Profile</a></li>
