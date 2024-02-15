@@ -98,7 +98,6 @@ include('includes/toolbar.php');
                         </div>
                       </div>
                       <!-- Circles which indicates the steps of the form:-->
-                      <div class="text-center"><span class="step"></span><span class="step"></span><span class="step"></span><span class="step"></span></div>
                     </form>
                   </div>
                 </div>
