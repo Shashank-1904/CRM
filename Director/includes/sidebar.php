@@ -54,11 +54,11 @@
                   </svg><span class="lan-30">Employee</span></a>
                 <ul class="sidebar-submenu">
                   <li><a href="employee_profile.php">Profile </a></li>
-                  <li><a href="#">Documents</a></li>
-                  <li><a href="#">Application</a></li>
-                  <li><a href="#">Attendance</a></li>
-                  <li><a href="#">Work History</a></li>
-                  <li><a href="#">Login / Logout Report</a></li>
+                  <li><a href="employee_document.php">Documents</a></li>
+                  <li><a href="employee_application.php">Application</a></li>
+                  <li><a href="employee_attendance.php">Attendance</a></li>
+                  <li><a href="employee_work_history.php">Work History</a></li>
+                  <li><a href="employee_logreport.php">Login / Logout Report</a></li>
                 </ul>
               </li>
               <!---------------------------------------Bar_List-End--------------------------------------------------------->
@@ -79,9 +79,9 @@
                     <use href="../assets/svg/icon-sprite.svg#fill-home"></use>
                   </svg><span class="lan-30">Operator</span></a>
                 <ul class="sidebar-submenu">
-                  <li><a href="#">Operator Profile</a></li>
-                  <li><a href="#">Status Alert</a></li>
-                  <li><a href="#">Operator Work Report</a></li>
+                  <li><a href="operator_profile.php">Operator Profile</a></li>
+                  <li><a href="operator_status_alert.php">Status Alert</a></li>
+                  <li><a href="operator_work_report.php">Operator Work Report</a></li>
                 </ul>
               </li>
               <!---------------------------------------Bar_List-End--------------------------------------------------------->
@@ -103,8 +103,8 @@
                     <use href="../assets/svg/icon-sprite.svg#fill-home"></use>
                   </svg><span class="lan-30">Calling</span></a>
                 <ul class="sidebar-submenu">
-                  <li><a href="#">Dashboard</a></li>
-                  <li><a href="#">History</a></li>
+                  <li><a href="calling_dashbard.php">Dashboard</a></li>
+                  <li><a href="calling_history.php">History</a></li>
                 </ul>
               </li>
               <!---------------------------------------Bar_List-End--------------------------------------------------------->
@@ -123,8 +123,8 @@
                   <use href="../assets/svg/icon-sprite.svg#fill-home"></use>
                 </svg><span class="lan-30">Enquiry</span></a>
                 <ul class="sidebar-submenu">
-                  <li><a href="#">History</a></li>
-                  <li><a href="#">Status Alert</a></li>
+                  <li><a href="enquiry_history.php">History</a></li>
+                  <li><a href="enquiry_status_alert.php">Status Alert</a></li>
                 </ul>
               </li>
 
@@ -136,8 +136,8 @@
                   <use href="../assets/svg/icon-sprite.svg#fill-home"></use>
                 </svg><span class="lan-30">Complaint</span></a>
                 <ul class="sidebar-submenu">
-                  <li><a href="#">History</a></li>
-                  <li><a href="#">Status Alert</a></li>
+                  <li><a href="complaint_history.php">History</a></li>
+                  <li><a href="complaint_status_alert.php">Status Alert</a></li>
                 </ul>
               </li>
 
@@ -149,8 +149,8 @@
                   <use href="../assets/svg/icon-sprite.svg#fill-home"></use>
                 </svg><span class="lan-30">Tech</span></a>
                 <ul class="sidebar-submenu">
-                  <li><a href="#">Support</a></li>
-                  <li><a href="#">Status Alert</a></li>
+                  <li><a href="tech_support.php">Support</a></li>
+                  <li><a href="tech_status_alert.php">Status Alert</a></li>
                 </ul>
               </li>
 
@@ -162,8 +162,8 @@
                   <use href="../assets/svg/icon-sprite.svg#fill-home"></use>
                 </svg><span class="lan-30">BGL</span></a>
                 <ul class="sidebar-submenu">
-                  <li><a href="#">Statement</a></li>
-                  <li><a href="#">Status Alert</a></li>
+                  <li><a href="bgl_statement.php">Statement</a></li>
+                  <li><a href="bgl_status_alert.php">Status Alert</a></li>
                 </ul>
               </li>
 
@@ -175,8 +175,8 @@
                   <use href="../assets/svg/icon-sprite.svg#fill-home"></use>
                 </svg><span class="lan-30">Penalty</span></a>
                 <ul class="sidebar-submenu">
-                  <li><a href="#">Amount</a></li>
-                  <li><a href="#">Status Alert</a></li>
+                  <li><a href="penalty_amount.php">Amount</a></li>
+                  <li><a href="penalty_status_alert.php">Status Alert</a></li>
                 </ul>
               </li>
 
@@ -188,8 +188,8 @@
                   <use href="../assets/svg/icon-sprite.svg#fill-home"></use>
                 </svg><span class="lan-30">Documents</span></a>
                 <ul class="sidebar-submenu">
-                  <li><a href="#">Documents</a></li>
-                  <li><a href="#">Status Alert</a></li>
+                  <li><a href="documents.php">Documents</a></li>
+                  <li><a href="documents_status_alert.php">Status Alert</a></li>
                 </ul>
               </li>
 
@@ -201,8 +201,8 @@
                   <use href="../assets/svg/icon-sprite.svg#fill-home"></use>
                 </svg><span class="lan-30">Deposit</span></a>
                 <ul class="sidebar-submenu">
-                  <li><a href="#">Amount</a></li>
-                  <li><a href="#">Status Alert</a></li>
+                  <li><a href="deposit_amount.php">Amount</a></li>
+                  <li><a href="deposit_status_alert.php">Status Alert</a></li>
                 </ul>
               </li>
 
@@ -214,8 +214,8 @@
                   <use href="../assets/svg/icon-sprite.svg#fill-home"></use>
                 </svg><span class="lan-30">Activation</span></a>
                 <ul class="sidebar-submenu">
-                  <li><a href="#">History</a></li>
-                  <li><a href="#">Status Alert</a></li>
+                  <li><a href="activation_history.php">History</a></li>
+                  <li><a href="activation_status_alert.php">Status Alert</a></li>
                 </ul>
               </li>
 
@@ -228,7 +228,7 @@
                 </svg><span class="lan-30">Tag</span></a>
                 <ul class="sidebar-submenu">
                   <li><a href="tag_enquiry.php">Enquiry</a></li>
-                  <li><a href="#">Complaint</a></li>
+                  <li><a href="tag_complaint.php">Complaint</a></li>
                 </ul>
               </li>
 
@@ -249,8 +249,8 @@
                     <use href="../assets/svg/icon-sprite.svg#fill-home"></use>
                   </svg><span class="lan-30">Suggestion</span></a>
                 <ul class="sidebar-submenu">
-                  <li><a href="#">CRM Bug Complaint</a></li>
-                  <li><a href="#">Suggestion</a></li>
+                  <li><a href="bug_complaint.php">CRM Bug Complaint</a></li>
+                  <li><a href="suggestion_feedback.php">Suggestion</a></li>
                   <li><a href="#">Feedback</a></li>
                 </ul>
               </li>
