@@ -392,3 +392,6 @@
   });
 })(jQuery);
 
+
+new DataTable('#example');
+
