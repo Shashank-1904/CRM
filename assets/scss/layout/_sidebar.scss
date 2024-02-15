@@ -971,6 +971,9 @@
       }
     }
 
+    [class^="icon-"], [class*=" icon-"] {
+      fill: #ffff; 
+   }
     div.sidebar-wrapper {
       .sidebar-main {
         .sidebar-links {
