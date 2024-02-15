@@ -228,7 +228,7 @@
                   <use href="../assets/svg/icon-sprite.svg#fill-home"></use>
                 </svg><span class="lan-30">Tag</span></a>
                 <ul class="sidebar-submenu">
-                  <li><a href="#">Enquiry</a></li>
+                  <li><a href="tag_enquiry.php">Enquiry</a></li>
                   <li><a href="#">Complaint</a></li>
                 </ul>
               </li>
