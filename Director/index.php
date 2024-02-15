@@ -15,7 +15,7 @@ include('includes/toolbar.php');
                         <div class="d-flex gap-2 align-items-end"> 
                           <div class="flex-grow-1">
                             <h2>42,954</h2>
-                            <p class="mb-0 text-truncate"> Total Students</p>
+                            <p class="mb-0 text-truncate"> Total Operator</p>
                             <div class="d-flex student-arrow text-truncate">
                               <p class="mb-0 up-arrow bg-light-danger"><i class="icon-arrow-down font-danger"></i></p><span class="f-w-500 font-danger">- 17.06%</span>than last 6 Month
                             </div>
@@ -31,7 +31,7 @@ include('includes/toolbar.php');
                         <div class="d-flex gap-2 align-items-end"> 
                           <div class="flex-grow-1">
                             <h2>659</h2>
-                            <p class="mb-0 text-truncate"> Total Teachers</p>
+                            <p class="mb-0 text-truncate"> Total Projects</p>
                             <div class="d-flex student-arrow text-truncate">
                               <p class="mb-0 up-arrow bg-light-success"><i class="icon-arrow-up font-success"></i></p><span class="f-w-500 font-success">+27.02%</span>than last 4 Month
                             </div>
@@ -46,8 +46,8 @@ include('includes/toolbar.php');
                       <div class="card-body student-3">
                         <div class="d-flex gap-2 align-items-end"> 
                           <div class="flex-grow-1">
-                            <h2>984</h2>
-                            <p class="mb-0 text-truncate"> Events</p>
+                            <h2>98400</h2>
+                            <p class="mb-0 text-truncate"> Amount</p>
                             <div class="d-flex student-arrow text-truncate">
                               <p class="mb-0 up-arrow bg-light-success"><i class="icon-arrow-up font-success"></i></p><span class="f-w-500 font-success">+ 12.01%</span>than last 8 Month
                             </div>
@@ -63,7 +63,7 @@ include('includes/toolbar.php');
                         <div class="d-flex gap-2 align-items-end"> 
                           <div class="flex-grow-1">
                             <h2>1,984</h2>
-                            <p class="mb-0 text-truncate"> Invoice Status</p>
+                            <p class="mb-0 text-truncate"> Pending</p>
                             <div class="d-flex student-arrow text-truncate">
                               <p class="mb-0 up-arrow bg-light-danger"><i class="icon-arrow-down font-danger"></i></p><span class="f-w-500 font-danger">- 15.02%</span>than last 5 Month
                             </div>
