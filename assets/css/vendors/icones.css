@@ -1,6 +1,3 @@
-/* [class^="icon-"], [class*=" icon-"] {
+[class^="icon-"], [class*=" icon-"] {
    fill: #ffff;
 }
-[class^="icon-"]:hover, [class*=" icon-"]:hover {
-   fill: #ffff; 
-} */
