@@ -3,13 +3,13 @@ include('includes/header.php');
 include('includes/sidebar.php');
 include('includes/toolbar.php');
 ?>
-<h1 class="page-title" style="text-align:center;">Suggestion & Feedback</h1>
+<h1 class="page-title" style="text-align:center;">CRM Bug Complaint</h1>
 <div class="row">
     
           <div class="col-xl-9">
                 <div class="card height-equal">
                   <div class="card-header">
-                    <h4>Suggestion and Feedback form</h4>
+                    <h4>CRM bug Complaint</h4>
                     <p class="f-m-light mt-1">
                         Please make sure fill all the filed before click on next button.</p>
                   </div>
@@ -28,12 +28,8 @@ include('includes/toolbar.php');
                         <input class="form-control" id="inputPassword2" type="password" required>
                       </div>
                       <div class="col-12"> 
-                        <label class="form-label" for="validationDefault04">Type</label>
-                        <select class="form-select" id="validationDefault04" required="">
-                          <option selected="" disabled="" value="">Choose...</option>
-                          <option>Suggestion</option>
-                          <option>Feedback</option>
-                        </select>
+                        <label class="form-label" for="formFile">Choose file</label>
+                        <input class="form-control" id="formFile" type="file">
                       </div>
                       <div class="col-12"> 
                         <label class="form-label" for="exampleFormControlTextarea1">Description</label>

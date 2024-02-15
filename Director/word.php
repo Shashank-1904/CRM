@@ -8,6 +8,19 @@ include('includes/toolbar.php');
     
           <div class="col-xl-9">
             <!-- Word Actual Content -->
+            <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="card">
+                  <div class="card-body">
+                    <textarea id="editor1" name="editor1" cols="30" rows="10">
+
+                    </textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           </div>
           <div class="col-xl-3">
             <div class="container-dialpad">

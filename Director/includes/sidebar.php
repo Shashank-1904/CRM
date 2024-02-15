@@ -12,7 +12,7 @@
             </svg>
           </div>
         </div>
-        <div class="logo-icon-wrapper"><a href="index.html"><img class="img-fluid" alt=""></a></div>
+        <div class="logo-icon-wrapper"><a href="index.html"><img class="img-fluid" style="width:40px;" src="../assets/images/logo/logo_Short.png" alt=""></a></div>
         <nav class="sidebar-main">
           <div class="left-arrow" id="left-arrow"><i data-feather="arrow-left"></i></div>
           <div id="sidebar-menu">
@@ -249,8 +249,8 @@
                     <use href="../assets/svg/icon-sprite.svg#fill-home"></use>
                   </svg><span class="lan-30">Suggestion</span></a>
                 <ul class="sidebar-submenu">
-                  <li><a href="bug_complaint.php">CRM Bug Complaint</a></li>
-                  <li><a href="suggestion_feedback.php">Suggestion</a></li>
+                  <li><a href="#">CRM Bug Complaint</a></li>
+                  <li><a href="#">Suggestion</a></li>
                   <li><a href="#">Feedback</a></li>
                 </ul>
               </li>
