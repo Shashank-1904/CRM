@@ -65,6 +65,7 @@ include('includes/toolbar.php');
             </div>
           </div>
       </div>
+      <script src="https://cdn.jsdelivr.net/npm/quill@2.0.0-rc.2/dist/quill.js"></script>
       <script>
   const quill = new Quill('#editor', {
     theme: 'snow'

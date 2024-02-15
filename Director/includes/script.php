@@ -38,7 +38,7 @@
   <script src="../assets/js/vector-map/map/jquery-jvectormap-chicago-mill-en.js"></script>
   <script src="../assets/js/vector-map/map/jquery-jvectormap-in-mill.js"></script>
   <script src="../assets/js/vector-map/map/jquery-jvectormap-asia-mill.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/quill@2.0.0-rc.2/dist/quill.js"></script>
+  
   <!-- calendar js-->
   <!-- <script src="../assets/js/datatable/datatables/jquery.dataTables.min.js"></script>
   <script src="../assets/js/datatable/datatables/datatable.custom.js"></script>
