@@ -13,12 +13,12 @@
           </div>
         </div>
         <div class="logo-icon-wrapper"><a href="index.html"><img class="img-fluid"
-              src="../assets/images/logo/main-logo.png" alt=""></a></div>
+              src="../assets/images/logo/main-logo.png" style="width:100px" alt=""></a></div>
         <nav class="sidebar-main">
           <div class="left-arrow" id="left-arrow"><i data-feather="arrow-left"></i></div>
           <div id="sidebar-menu">
             <ul class="sidebar-links" id="simple-bar">
-              <li class="back-btn"><a href="index.html"><img class="img-fluid" src="../assets/images/logo/main-logo.png"
+              <li class="back-btn"><a href="index.html"><img class="img-fluid" style="width:100px" src="../assets/images/logo/main-logo.png"
                     alt=""></a>
                 <div class="mobile-back text-end"><span>Back</span><i class="fa fa-angle-right ps-2"
                     aria-hidden="true"></i></div>
