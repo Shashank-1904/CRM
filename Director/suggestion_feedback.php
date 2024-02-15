@@ -7,7 +7,6 @@ include('includes/toolbar.php');
 <div class="row">
     
           <div class="col-xl-9">
-          <div class="col-xl-6">
                 <div class="card height-equal">
                   <div class="card-header">
                     <h4>Student validation form</h4>
@@ -103,7 +102,6 @@ include('includes/toolbar.php');
                     </form>
                   </div>
                 </div>
-              </div>
           </div>
           <div class="col-xl-3">
             <div class="container-dialpad">
