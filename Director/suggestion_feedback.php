@@ -14,11 +14,35 @@ include('includes/toolbar.php');
                         Please make sure fill all the filed before click on next button.</p>
                   </div>
                   <div class="card-body custom-input">
-                    <h1>Helooooiodjfj</h1>
-                    <h1>Helooooiodjfj</h1>
-                    <h1>Helooooiodjfj</h1>
-                    <h1>Helooooiodjfj</h1>
-                    <h1>Helooooiodjfj</h1>
+                    <form class="form-wizard" id="regForm" action="#" method="POST">
+                      <div class="tab">
+                        <div class="row g-3">
+                          <div class="col-sm-6">
+                            <label for="name">Name</label>
+                            <input class="form-control" id="name" type="text" placeholder="Enter your name" required="required">
+                          </div>
+                          <div class="col-sm-6">
+                            <label class="form-label" for="student-email-wizard">Email<span class="txt-danger">*</span></label>
+                            <input class="form-control" id="student-email-wizard" type="email" required="" placeholder="Mofi@gmail.com">
+                          </div>
+                          <div class="col-12">
+                            <label class="col-sm-12 form-label" for="password-wizard">Password<span class="txt-danger">*</span></label>
+                            <input class="form-control" id="password-wizard" type="password" placeholder="Enter password" required="">
+                          </div>
+                          <div class="col-12">
+                            <label class="col-sm-12 form-label" for="confirmpassowrd">Confirm Password<span class="txt-danger">*</span></label>
+                            <input class="form-control" id="confirmpassowrd" type="password" placeholder="Enter confirm password" required="">
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="text-end pt-3">
+                          <button class="btn btn-secondary" id="prevBtn" type="button" onclick="nextPrev(-1)">Previous</button>
+                          <button class="btn btn-primary" id="nextBtn" type="button" onclick="nextPrev(1)">Next</button>
+                        </div>
+                      </div>
+                      <!-- Circles which indicates the steps of the form:-->
+                    </form>
                   </div>
                 </div>
           </div>
