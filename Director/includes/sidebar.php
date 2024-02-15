@@ -103,7 +103,7 @@
                     <use href="../assets/svg/icon-sprite.svg#fill-home"></use>
                   </svg><span class="lan-30">Calling</span></a>
                 <ul class="sidebar-submenu">
-                  <li><a href="calling_dashbard.php">Dashboard</a></li>
+                  <li><a href="calling_dashboard.php">Dashboard</a></li>
                   <li><a href="calling_history.php">History</a></li>
                 </ul>
               </li>
