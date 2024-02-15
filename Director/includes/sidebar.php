@@ -250,8 +250,7 @@
                   </svg><span class="lan-30">Suggestion</span></a>
                 <ul class="sidebar-submenu">
                   <li><a href="#">CRM Bug Complaint</a></li>
-                  <li><a href="#">Suggestion</a></li>
-                  <li><a href="#">Feedback</a></li>
+                  <li><a href="#">Suggestion & Feedback</a></li>
                 </ul>
               </li>
               <!---------------------------------------Bar_List-End--------------------------------------------------------->
