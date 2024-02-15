@@ -1,7 +1,5 @@
 
   <!-- latest jquery-->
-  <script defer src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
-<script defer src="https://cdn.datatables.net/1.13.7/js/dataTables.bootstrap5.min.js"></script>
   <script src="../assets/js/jquery.min.js"></script>
   <!-- Bootstrap js-->
   <script src="../assets/js/bootstrap/bootstrap.bundle.min.js"></script>
