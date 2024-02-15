@@ -16,7 +16,7 @@ include('includes/toolbar.php');
                   <div class="card-body custom-input">
                   <form class="row g-3">
                       <div class="col-12"> 
-                        <label class="form-label" for="first-name">First name</label>
+                        <label class="form-label" for="first-name">Full Name</label>
                         <input class="form-control" id="first-name" type="text" placeholder="First name" aria-label="First name" required>
                       </div>
                       <div class="col-12">
