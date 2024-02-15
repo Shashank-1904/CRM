@@ -1,6 +1,6 @@
 <!-- Page Sidebar Start-->
 <div class="sidebar-wrapper" data-layout="stroke-svg">
-        <div class="logo-wrapper"><a href="index.html"><img class="img-fluid" src="../assets/images/logo/main-logo.png"
+        <div class="logo-wrapper"><a href="index.html"><img class="img-fluid" style="width:100px" src="../assets/images/logo/main-logo.png"
               alt=""></a>
           <div class="back-btn"><i class="fa fa-angle-left"></i></div>
           <div class="toggle-sidebar">
@@ -13,7 +13,7 @@
           </div>
         </div>
         <div class="logo-icon-wrapper"><a href="index.html"><img class="img-fluid"
-              src="../assets/images/logo/main-logo.png" style="width:100px" alt=""></a></div>
+              src="../assets/images/logo/main-logo.png" alt=""></a></div>
         <nav class="sidebar-main">
           <div class="left-arrow" id="left-arrow"><i data-feather="arrow-left"></i></div>
           <div id="sidebar-menu">
