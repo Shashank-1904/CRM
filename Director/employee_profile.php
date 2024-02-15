@@ -97,6 +97,9 @@ include('includes/toolbar.php');
             </div>
           </div>
       </div>
+      <script>
+new DataTable('#example');
+        </script>
 
 <?php
 include('includes/footer.php');

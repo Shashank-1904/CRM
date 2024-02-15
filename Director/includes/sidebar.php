@@ -54,7 +54,7 @@
                     <use href="../assets/svg/icon-sprite.svg#fill-home"></use>
                   </svg><span class="lan-30">Employee</span></a>
                 <ul class="sidebar-submenu">
-                  <li><a href="#">Profile </a></li>
+                  <li><a href="employee_profile.php">Profile </a></li>
                   <li><a href="#">Documents</a></li>
                   <li><a href="#">Application</a></li>
                   <li><a href="#">Attendance</a></li>
