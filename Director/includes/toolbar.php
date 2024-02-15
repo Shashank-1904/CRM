@@ -2,7 +2,7 @@
         <!-- Container-fluid starts-->
         <div class="menu-wrapper">
           <div class="menu-item">
-            <a href="mail.php"><i class="fa-regular fa-envelope"></i>Mail</a>
+            <a href="mail.php"><i class="fa-regular fa-envelope"></i> Mail</a>
             <a href="chat.php">Chat's</a>
             <a href="google.php">Google</a>
             <a href="aadhar.php">Aadhaar Portal</a>
