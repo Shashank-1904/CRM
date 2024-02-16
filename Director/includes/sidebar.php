@@ -50,9 +50,9 @@
                     <use href="../assets/svg/icon-sprite.svg#stroke-user"></use>
                   </svg>
                   <svg class="fill-icon">
-                    <use href="../assets/svg/icon-sprite.svg#fill-user"></use> -->
-                    <svg class="icon-bed-pulse"><use xlink:href="../assets/svg/icons.svg#icon-bed-pulse"></use></svg>
-                  </svg><span class="lan-30">Employee</span></a>
+                    <use href="../assets/svg/icon-sprite.svg#fill-user"></use></svg> -->
+                    <svg class="icon-user-tie"><use xlink:href="../assets/svg/icons.svg#icon-user-tie"></use></svg>
+                  <span class="lan-30">Employee</span></a>
                 <ul class="sidebar-submenu">
                   <li><a href="employee_profile.php">Profile </a></li>
                   <li><a href="employee_document.php">Documents</a></li>
@@ -79,7 +79,7 @@
                   <svg class="fill-icon">
                     <use href="../assets/svg/icon-sprite.svg#fill-userplus"></use>
                   </svg> -->
-                  <svg class="icon-anchor"><use xlink:href="../assets/svg/icons.svg#icon-anchor"></use></svg>
+                  <svg class="icon-user"><use xlink:href="../assets/svg/icons.svg#icon-user"></use></svg>
                   <span class="lan-30">Operator</span></a>
                 <ul class="sidebar-submenu">
                   <li><a href="operator_profile.php">Operator Profile</a></li>
@@ -99,12 +99,8 @@
               <!-------------------------------------Bar_List----------------------------------------------------------->
               <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title"
                   href="javascript:void(0)">
-                  <svg class="stroke-icon">
-                    <use href="../assets/svg/icon-sprite.svg#stroke-home"></use>
-                  </svg>
-                  <svg class="fill-icon">
-                    <use href="../assets/svg/icon-sprite.svg#fill-home"></use>
-                  </svg><span class="lan-30">Calling</span></a>
+                  <svg class="icon-headset"><use xlink:href="../assets/svg/icons.svg#icon-headset"></use></svg>
+                  <span class="lan-30">Calling</span></a>
                 <ul class="sidebar-submenu">
                   <li><a href="calling_ dashboard.php">Dashboard</a></li>
                   <li><a href="calling_history.php">History</a></li>
@@ -119,12 +115,8 @@
                 </div>
               </li>
               <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title" href="javascript:void(0)">
-                <svg class="stroke-icon">
-                  <use href="../assets/svg/icon-sprite.svg#stroke-home"></use>
-                </svg>
-                <svg class="fill-icon">
-                  <use href="../assets/svg/icon-sprite.svg#fill-home"></use>
-                </svg><span class="lan-30">Enquiry</span></a>
+              <svg class="icon-person-circle-question"><use xlink:href="../assets/svg/icons.svg#icon-person-circle-question"></use></svg>  
+              <span class="lan-30">Enquiry</span></a>
                 <ul class="sidebar-submenu">
                   <li><a href="enquiry_history.php">History</a></li>
                   <li><a href="enquiry_status_alert.php">Status Alert</a></li>
@@ -132,12 +124,8 @@
               </li>
 
               <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title" href="javascript:void(0)">
-                <svg class="stroke-icon">
-                  <use href="../assets/svg/icon-sprite.svg#stroke-home"></use>
-                </svg>
-                <svg class="fill-icon">
-                  <use href="../assets/svg/icon-sprite.svg#fill-home"></use>
-                </svg><span class="lan-30">Complaint</span></a>
+              <svg class="icon-person-circle-exclamation"><use xlink:href="../assets/svg/icons.svg#icon-person-circle-exclamation"></use></svg>  
+              <span class="lan-30">Complaint</span></a>
                 <ul class="sidebar-submenu">
                   <li><a href="complaint_history.php">History</a></li>
                   <li><a href="complaint_status_alert.php">Status Alert</a></li>
@@ -145,12 +133,8 @@
               </li>
 
               <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title" href="javascript:void(0)">
-                <svg class="stroke-icon">
-                  <use href="../assets/svg/icon-sprite.svg#stroke-home"></use>
-                </svg>
-                <svg class="fill-icon">
-                  <use href="../assets/svg/icon-sprite.svg#fill-home"></use>
-                </svg><span class="lan-30">Tech</span></a>
+              <svg class="icon-microchip"><use xlink:href="../assets/svg/icons.svg#icon-microchip"></use></svg>  
+              <span class="lan-30">Tech</span></a>
                 <ul class="sidebar-submenu">
                   <li><a href="tech_support.php">Support</a></li>
                   <li><a href="tech_status_alert.php">Status Alert</a></li>
