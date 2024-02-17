@@ -7,6 +7,14 @@ include('includes/toolbar.php');
 <div class="row">
     
           <div class="col-xl-9">
+          <div class="row">
+            <div class="col-6">
+                <button type="button" class="btn" id="add_btn" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-plus"></i> Add New Patient</button>
+            </div>
+            <div class="col-6 text-end">
+                <button type="button" class="btn" id="add_btn" data-bs-toggle="modal" data-bs-target="#reportModal"><i class="fa-solid fa-download"></i> Export </button>
+            </div>
+        </div>
           <?php if(isset($_GET['error'])){ ?> 
           <p class="error"><?php echo '<h4>' . $_GET['error'] . '</h4>'; ?> </p>
         <?php } ?>
