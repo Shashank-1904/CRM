@@ -117,7 +117,7 @@ include('includes/toolbar.php');
                               </div>
 
                                 <div class="text-center">
-                                    <button type="submit" name="export_btn" class="btn btn-primary mt-3 px-5 w-100">Download</button>
+                                    <button type="submit" name="export_btn" class="btn btn-success mt-3 px-5 w-100">Download</button>
                                 </div>    
                             </form>
                         </div>
