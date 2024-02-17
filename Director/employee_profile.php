@@ -89,6 +89,43 @@ include('includes/toolbar.php');
             </div>
             <!-- Modal Ends -->
 
+            <!-- Modal Starts for Export Data -->
+
+            <div class="modal fade" id="reportModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">Filter by Registered Date</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+
+                      <div class="modal-body">
+                          <form action="../handler/PatientExport.php" method="POST">
+                              <div class="row">
+                                  <div class="col-6">
+                                      <div class="form-group">
+                                          <label>From Date</label>
+                                          <input type="date" name="from_date" class="form-control" required>
+                                      </div>
+                                  </div>
+                                  <div class="col-6">
+                                      <div class="form-group">
+                                          <label>To Date</label>
+                                          <input type="date" name="to_date" class="form-control" required>
+                                      </div>
+                                  </div>
+                              </div>
+
+                                <div class="text-center">
+                                    <button type="submit" name="export_btn" class="btn btn-primary mt-3 px-5 w-100">Download</button>
+                                </div>    
+                            </form>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            <!-- Modal Ends -->
+
           <div class="row mb-3">
             <div class="col-3">
                 <button type="button" class="btn btn-primary" id="add_mbtn" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-plus"></i> Manually Add Record</button>
