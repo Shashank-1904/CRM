@@ -6,7 +6,7 @@ include('includes/toolbar.php');
 <h1 class="page-title" style="text-align:center;">Employee Profile</h1>
   <div class="row">
 
-    <!-- Modal Starts -->
+    <!-- Modal Starts For Manual Record -->
 
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
@@ -53,7 +53,34 @@ include('includes/toolbar.php');
                 </div>
                 
                 <div class="modal-footer">
-                    <button type="submit" name="add_employee" class="btn" id="add_btn">Add Employee</button>
+                    <button type="submit" name="add_employee" class="btn btn-success" id="add_btn">Add Employee</button>
+                </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Ends -->
+
+
+    <!-- Modal Starts For Excel Sheet -->
+
+    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Drop Your Excel File of Employee</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+        
+          <div class="modal-body">
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <input type="file" name="p_file" class="form-control" placeholder="Enter Blood Group" required />
+                </div>
+                
+                <div class="modal-footer">
+                    <button type="submit" name="add_excelsheet" class="btn btn-success" id="add_btn">Add Records</button>
                 </div>
             </form>
           </div>
