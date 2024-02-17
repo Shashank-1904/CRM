@@ -7,17 +7,17 @@ include('includes/toolbar.php');
 <div class="row">
     
           <div class="col-xl-9">
-          <div class="row">
+          <div class="row mb-3">
             <div class="col-3">
-                <button type="button" class="btn btn-primary" id="add_btn" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-plus"></i> Manually Add Record</button>
+                <button type="button" class="btn btn-primary" id="add_mbtn" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-plus"></i> Manually Add Record</button>
             </div>
             <div class="col-3">
-                <button type="button" class="btn btn-primary" id="add_btn" data-bs-toggle="modal" data-bs-target="#exampleModal1"><i class="fa-solid fa-plus"></i> Add Via ExcelSheet</button>
+                <button type="button" class="btn btn-primary" id="add_esbtn" data-bs-toggle="modal" data-bs-target="#exampleModal1"><i class="fa-solid fa-plus"></i> Add Via ExcelSheet</button>
             </div>
             <div class="col-3"></div>
             <div class="col-3 text-end">
-                <button type="button" class="btn btn-success" id="add_btn" data-bs-toggle="modal" data-bs-target="#reportModal"><i class="fa-solid fa-download"></i> Export </button>
-            </div>
+                <button type="button" class="btn btn-success" id="add_ebtn" data-bs-toggle="modal" data-bs-target="#reportModal"><i class="fa-solid fa-download"></i> Export </button>
+          </div>
         </div>
           <?php if(isset($_GET['error'])){ ?> 
           <p class="error"><?php echo '<h4>' . $_GET['error'] . '</h4>'; ?> </p>
@@ -27,7 +27,7 @@ include('includes/toolbar.php');
           <p class="success"><?php echo '<h4>' . $_GET['success'] . '</h4>'; ?> </p>
         <?php } ?>
 
-        <table id="example" class="table table-striped mt-3" style="width:100%">
+        <table id="example" class="table table-striped" style="width:100%">
 	        <thead>
                 <tr>
                     <th>Sr. No</th>
