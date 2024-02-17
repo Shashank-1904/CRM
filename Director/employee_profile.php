@@ -63,7 +63,9 @@ include('includes/toolbar.php');
     <!-- Modal Ends -->
 
 
-    <!-- Modal Starts For Excel Sheet -->
+          <div class="col-xl-11">
+
+          <!-- Modal Starts For Excel Sheet -->
 
     <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
@@ -75,8 +77,8 @@ include('includes/toolbar.php');
         
           <div class="modal-body">
             <form action="#" method="POST">
-                <div class="form-group">
-                    <input type="file" name="p_file" class="form-control" placeholder="Enter Blood Group" required />
+                <div class="form-group mb-2">
+                    <input type="file" name="p_file" class="form-control" required />
                 </div>
                 
                 <div class="modal-footer">
@@ -90,7 +92,7 @@ include('includes/toolbar.php');
     <!-- Modal Ends -->
 
 
-          <div class="col-xl-11">
+    
           <div class="row mb-3">
             <div class="col-3">
                 <button type="button" class="btn btn-primary" id="add_mbtn" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-plus"></i> Manually Add Record</button>
