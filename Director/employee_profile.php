@@ -5,94 +5,90 @@ include('includes/toolbar.php');
 ?>
 <h1 class="page-title" style="text-align:center;">Employee Profile</h1>
   <div class="row">
-
-    <!-- Modal Starts For Manual Record -->
-
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Employee Details</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-        
-          <div class="modal-body">
-            <form action="#" method="POST">
-                <div class="form-group">
-                    <label>Name</label>
-                    <input type="text" name="p_name" class="form-control" placeholder="Enter Full Name" required />
-                </div>
-
-                <div class="form-group">
-                    <label>Address</label>
-                    <textarea name="p_addr" class="form-control" cols="30" rows="3"></textarea>
-                </div>
-
-                <div class="form-group">
-                    <label>Contact</label>
-                    <input type="text" name="p_contact" class="form-control" placeholder="Enter Your Contact No." required />
-                </div>
-
-                <div class="form-group">
-                    <label>Gender</label>
-                        <select class="form-control" name="p_gender">
-                            <option value="Male">Male</option>
-                            <option value="Female">Female</option>
-                            <option value="Other">Other</option>
-                        </select>
-                </div>
-
-                <div class="form-group">
-                    <label>Birth Date</label>
-                    <input type="date" name="p_dob" class="form-control" required>
-                </div>
-
-                <div class="form-group">
-                    <label>Blood Group</label>
-                    <input type="text" name="p_bg" class="form-control" placeholder="Enter Blood Group" required />
-                </div>
-                
-                <div class="modal-footer">
-                    <button type="submit" name="add_employee" class="btn btn-success" id="add_btn">Add Employee</button>
-                </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Modal Ends -->
-
-
           <div class="col-xl-11">
+
+           <!-- Modal Starts For Manual Record -->
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Employee Details</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                
+                  <div class="modal-body">
+                    <form action="#" method="POST">
+                        <div class="form-group mb-2">
+                            <label>Name</label>
+                            <input type="text" name="p_name" class="form-control" placeholder="Enter Full Name" required />
+                        </div>
+
+                        <div class="form-group mb-2">
+                            <label>Address</label>
+                            <textarea name="p_addr" class="form-control" cols="30" rows="3"></textarea>
+                        </div>
+
+                        <div class="form-group mb-2">
+                            <label>Contact</label>
+                            <input type="text" name="p_contact" class="form-control" placeholder="Enter Your Contact No." required />
+                        </div>
+
+                        <div class="form-group mb-2">
+                            <label>Gender</label>
+                                <select class="form-control" name="p_gender">
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                        </div>
+
+                        <div class="form-group mb-2">
+                            <label>Birth Date</label>
+                            <input type="date" name="p_dob" class="form-control" required>
+                        </div>
+
+                        <div class="form-group mb-2">
+                            <label>Blood Group</label>
+                            <input type="text" name="p_bg" class="form-control" placeholder="Enter Blood Group" required />
+                        </div>
+                        
+                        <div class="modal-footer">
+                            <button type="submit" name="add_employee" class="btn btn-success" id="add_btn">Add Employee</button>
+                        </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Modal Ends -->
 
           <!-- Modal Starts For Excel Sheet -->
 
-    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Drop Your Excel File of Employee</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-        
-          <div class="modal-body">
-            <form action="#" method="POST">
-                <div class="form-group mb-2">
-                    <input type="file" name="p_file" class="form-control" required />
-                </div>
+            <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Drop Your Excel File of Employee</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
                 
-                <div class="modal-footer">
-                    <button type="submit" name="add_excelsheet" class="btn btn-success" id="add_btn">Add Records</button>
+                  <div class="modal-body">
+                    <form action="#" method="POST">
+                        <div class="form-group mb-2 mb-2">
+                            <input type="file" name="p_file" class="form-control" required />
+                        </div>
+                        
+                        <div class="modal-footer">
+                            <button type="submit" name="add_excelsheet" class="btn btn-success" id="add_btn">Add Records</button>
+                        </div>
+                    </form>
+                  </div>
                 </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Modal Ends -->
+              </div>
+            </div>
+            <!-- Modal Ends -->
 
-
-    
           <div class="row mb-3">
             <div class="col-3">
                 <button type="button" class="btn btn-primary" id="add_mbtn" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-plus"></i> Manually Add Record</button>
