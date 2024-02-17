@@ -6,7 +6,7 @@ include('includes/toolbar.php');
 <h1 class="page-title" style="text-align:center;">Employee Profile</h1>
 <div class="row">
     
-          <div class="col-xl-9">
+          <div class="col-xl-11">
           <div class="row mb-3">
             <div class="col-3">
                 <button type="button" class="btn btn-primary" id="add_mbtn" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-plus"></i> Manually Add Record</button>
