@@ -4,8 +4,65 @@ include('includes/sidebar.php');
 include('includes/toolbar.php');
 ?>
 <h1 class="page-title" style="text-align:center;">Employee Profile</h1>
-<div class="row">
-    
+  <div class="row">
+
+    <!-- Modal Starts -->
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Employee Details</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+        
+          <div class="modal-body">
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" name="p_name" class="form-control" placeholder="Enter Full Name" required />
+                </div>
+
+                <div class="form-group">
+                    <label>Address</label>
+                    <textarea name="p_addr" class="form-control" cols="30" rows="3"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Contact</label>
+                    <input type="text" name="p_contact" class="form-control" placeholder="Enter Your Contact No." required />
+                </div>
+
+                <div class="form-group">
+                    <label>Gender</label>
+                        <select class="form-control" name="p_gender">
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Other">Other</option>
+                        </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Birth Date</label>
+                    <input type="date" name="p_dob" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Blood Group</label>
+                    <input type="text" name="p_bg" class="form-control" placeholder="Enter Blood Group" required />
+                </div>
+                
+                <div class="modal-footer">
+                    <button type="submit" name="add_employee" class="btn" id="add_btn">Add Employee</button>
+                </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Ends -->
+
+
           <div class="col-xl-11">
           <div class="row mb-3">
             <div class="col-3">
@@ -58,7 +115,7 @@ include('includes/toolbar.php');
             </tbody>
         </table>
           </div>
-          <div class="col-xl-3">
+          <div class="col-xl-1">
             <div class="container-dialpad">
               <div id="output"></div>
               <div class="row-single">
