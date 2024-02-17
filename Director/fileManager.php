@@ -7,7 +7,7 @@ include('includes/toolbar.php');
 <div class="row">
     
           <div class="col-xl-9">
-              <iframe src="https://cc.creativeitservicess.com/index.php" frameborder="0"></iframe>
+              <iframe src="https://cc.creativeitservicess.com" frameborder="0"></iframe>
           </div>
           <div class="col-xl-3">
             <div class="container-dialpad">
