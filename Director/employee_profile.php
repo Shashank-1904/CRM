@@ -54,7 +54,7 @@ include('includes/toolbar.php');
                         </div>
                         
                         <div class="modal-footer">
-                            <button type="submit" name="add_employee" class="btn btn-success" id="add_btn">Add Employee</button>
+                            <button type="submit" name="add_employee" class="btn btn-success px-5 w-100" id="add_btn">Add Employee</button>
                         </div>
                     </form>
                   </div>
@@ -80,7 +80,7 @@ include('includes/toolbar.php');
                         </div>
                         
                         <div class="modal-footer">
-                            <button type="submit" name="add_excelsheet" class="btn btn-success" id="add_btn">Add Records</button>
+                            <button type="submit" name="add_excelsheet" class="btn btn-success px-5 w-100" id="add_btn">Add Records</button>
                         </div>
                     </form>
                   </div>
