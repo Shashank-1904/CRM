@@ -55,6 +55,7 @@
   <link rel="stylesheet" type="text/css" href="../assets/css/responsive.css">
   <link rel="stylesheet" href="../assets/css/topbar.css">
   <link rel="stylesheet" href="../assets/css/dialpad.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/g-style.css">
 </head>
 
 <body>
