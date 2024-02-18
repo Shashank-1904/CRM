@@ -142,12 +142,8 @@
               </li>
 
               <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title" href="javascript:void(0)">
-                <svg class="stroke-icon">
-                  <use href="../assets/svg/icon-sprite.svg#stroke-home"></use>
-                </svg>
-                <svg class="fill-icon">
-                  <use href="../assets/svg/icon-sprite.svg#fill-home"></use>
-                </svg><span class="lan-30">BGL</span></a>
+              <svg class="icon-file-chart-pie"><use xlink:href="../assets/svg/icons.svg#icon-file-chart-pie"></use></svg>  
+              <span class="lan-30">BGL</span></a>
                 <ul class="sidebar-submenu">
                   <li><a href="bgl_statement.php">Statement</a></li>
                   <li><a href="bgl_status_alert.php">Status Alert</a></li>
@@ -155,12 +151,8 @@
               </li>
 
               <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title" href="javascript:void(0)">
-                <svg class="stroke-icon">
-                  <use href="../assets/svg/icon-sprite.svg#stroke-home"></use>
-                </svg>
-                <svg class="fill-icon">
-                  <use href="../assets/svg/icon-sprite.svg#fill-home"></use>
-                </svg><span class="lan-30">Penalty</span></a>
+              <svg class="icon-person-sign"><use xlink:href="../assets/svg/icons.svg#icon-person-sign"></use></svg>  
+              <span class="lan-30">Penalty</span></a>
                 <ul class="sidebar-submenu">
                   <li><a href="penalty_amount.php">Amount</a></li>
                   <li><a href="penalty_status_alert.php">Status Alert</a></li>
@@ -168,12 +160,8 @@
               </li>
 
               <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title" href="javascript:void(0)">
-                <svg class="stroke-icon">
-                  <use href="../assets/svg/icon-sprite.svg#stroke-home"></use>
-                </svg>
-                <svg class="fill-icon">
-                  <use href="../assets/svg/icon-sprite.svg#fill-home"></use>
-                </svg><span class="lan-30">Documents</span></a>
+              <svg class="icon-folder-open"><use xlink:href="../assets/svg/icons.svg#icon-folder-open"></use></svg>  
+              <span class="lan-30">Documents</span></a>
                 <ul class="sidebar-submenu">
                   <li><a href="documents.php">Documents</a></li>
                   <li><a href="documents_status_alert.php">Status Alert</a></li>
@@ -181,12 +169,8 @@
               </li>
 
               <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title" href="javascript:void(0)">
-                <svg class="stroke-icon">
-                  <use href="../assets/svg/icon-sprite.svg#stroke-home"></use>
-                </svg>
-                <svg class="fill-icon">
-                  <use href="../assets/svg/icon-sprite.svg#fill-home"></use>
-                </svg><span class="lan-30">Deposit</span></a>
+              <svg class="icon-money-from-bracket"><use xlink:href="../assets/svg/icons.svg#icon-money-from-bracket"></use></svg>  
+              <span class="lan-30">Deposit</span></a>
                 <ul class="sidebar-submenu">
                   <li><a href="deposit_amount.php">Amount</a></li>
                   <li><a href="deposit_status_alert.php">Status Alert</a></li>
@@ -194,12 +178,8 @@
               </li>
 
               <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title" href="javascript:void(0)">
-                <svg class="stroke-icon">
-                  <use href="../assets/svg/icon-sprite.svg#stroke-home"></use>
-                </svg>
-                <svg class="fill-icon">
-                  <use href="../assets/svg/icon-sprite.svg#fill-home"></use>
-                </svg><span class="lan-30">Activation</span></a>
+              <svg class="icon-power-off"><use xlink:href="#icon-power-off"></use></svg>  
+              <span class="lan-30">Activation</span></a>
                 <ul class="sidebar-submenu">
                   <li><a href="activation_history.php">History</a></li>
                   <li><a href="activation_status_alert.php">Status Alert</a></li>
@@ -207,12 +187,8 @@
               </li>
 
               <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title" href="javascript:void(0)">
-                <svg class="stroke-icon">
-                  <use href="../assets/svg/icon-sprite.svg#stroke-home"></use>
-                </svg>
-                <svg class="fill-icon">
-                  <use href="../assets/svg/icon-sprite.svg#fill-home"></use>
-                </svg><span class="lan-30">Tag</span></a>
+              <svg class="icon-tag"><use xlink:href="#icon-tag"></use></svg>  
+              <span class="lan-30">Tag</span></a>
                 <ul class="sidebar-submenu">
                   <li><a href="tag_enquiry.php">Enquiry</a></li>
                   <li><a href="tag_complaint.php">Complaint</a></li>
@@ -229,12 +205,8 @@
               <!-------------------------------------Bar_List----------------------------------------------------------->
               <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title"
                   href="javascript:void(0)">
-                  <svg class="stroke-icon">
-                    <use href="../assets/svg/icon-sprite.svg#stroke-home"></use>
-                  </svg>
-                  <svg class="fill-icon">
-                    <use href="../assets/svg/icon-sprite.svg#fill-home"></use>
-                  </svg><span class="lan-30">Suggestion</span></a>
+                  <svg class="icon-lightbulb-gear"><use xlink:href="#icon-lightbulb-gear"></use></svg>
+                  <span class="lan-30">Suggestion</span></a>
                 <ul class="sidebar-submenu">
                   <li><a href="bug_complaint.php">CRM Bug Complaint</a></li>
                   <li><a href="suggestion_feedback.php">Suggestion & Feedback</a></li>
