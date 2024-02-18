@@ -79,7 +79,7 @@
                   <svg class="fill-icon">
                     <use href="../assets/svg/icon-sprite.svg#fill-userplus"></use>
                   </svg> -->
-                  <svg class="icon-user"><use xlink:href="../assets/svg/icons.svg#icon-user"></use></svg>
+                  <svg class="icon-user"><use xlink:href="../assets/svg/icons.svg#icon-user-headset"></use></svg>
                   <span class="lan-30">Operator</span></a>
                 <ul class="sidebar-submenu">
                   <li><a href="operator_profile.php">Operator Profile</a></li>
@@ -99,7 +99,7 @@
               <!-------------------------------------Bar_List----------------------------------------------------------->
               <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title"
                   href="javascript:void(0)">
-                  <svg class="icon-user-headset"><use xlink:href="../assets/svg/icons.svg#icon-user-headset"></use></svg>
+                  <svg class="icon-headset"><use xlink:href="../assets/svg/icons.svg#icon-headset"></use></svg>
                   <span class="lan-30">Calling</span></a>
                 <ul class="sidebar-submenu">
                   <li><a href="calling_ dashboard.php">Dashboard</a></li>
