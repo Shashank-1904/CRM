@@ -178,7 +178,7 @@
               </li>
 
               <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title" href="javascript:void(0)">
-              <svg class="icon-power-off"><use xlink:href="#icon-power-off"></use></svg>  
+              <svg class="icon-power-off"><use xlink:href="../assets/svg/icons.svg#icon-power-off"></use></svg>  
               <span class="lan-30">Activation</span></a>
                 <ul class="sidebar-submenu">
                   <li><a href="activation_history.php">History</a></li>
@@ -187,7 +187,7 @@
               </li>
 
               <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title" href="javascript:void(0)">
-              <svg class="icon-tag"><use xlink:href="#icon-tag"></use></svg>  
+              <svg class="icon-tag"><use xlink:href="../assets/svg/icons.svg#icon-tag"></use></svg>  
               <span class="lan-30">Tag</span></a>
                 <ul class="sidebar-submenu">
                   <li><a href="tag_enquiry.php">Enquiry</a></li>
@@ -205,7 +205,7 @@
               <!-------------------------------------Bar_List----------------------------------------------------------->
               <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title"
                   href="javascript:void(0)">
-                  <svg class="icon-lightbulb-gear"><use xlink:href="#icon-lightbulb-gear"></use></svg>
+                  <svg class="icon-lightbulb-gear"><use xlink:href="../assets/svg/icons.svg#icon-lightbulb-gear"></use></svg>
                   <span class="lan-30">Suggestion</span></a>
                 <ul class="sidebar-submenu">
                   <li><a href="bug_complaint.php">CRM Bug Complaint</a></li>
