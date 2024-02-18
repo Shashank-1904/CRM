@@ -8,7 +8,7 @@ include('includes/toolbar.php');
 
   <div class="col-xl-9">
     <!-- Google Actual Content -->
-    <!-- Header -->
+    <!-- Header
     <header>
       <nav class="navbar">
         <ul>
@@ -30,7 +30,7 @@ include('includes/toolbar.php');
           </li>
         </ul>
       </nav>
-    </header>
+    </header> -->
 
     <!-- Content -->
     <section class="content-section">
@@ -51,40 +51,6 @@ include('includes/toolbar.php');
         </div>
       </div>
     </section>
-
-    <!-- Footer -->
-    <footer>
-      <div class="footer-content upper-footer">
-        <p>New Zealand</p>
-      </div>
-      <div class="footer-content lower-footer">
-        <ul class="lower-left-footer">
-          <li>
-            <a href="">About</a>
-          </li>
-          <li>
-            <a href="">Advertising</a>
-          </li>
-          <li>
-            <a href="">Business</a>
-          </li>
-          <li>
-            <a href="">How Search Works</a>
-          </li>
-        </ul>
-        <ul class="lower-right-footer">
-          <li>
-            <a href="">Privacy</a>
-          </li>
-          <li>
-            <a href="">Terms</a>
-          </li>
-          <li>
-            <a href="">Settings</a>
-          </li>
-        </ul>
-      </div>
-    </footer>
   </div>
   <!------------------------------------------>
   <div class="col-xl-3">
